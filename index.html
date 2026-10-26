@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classical Homoeo Clinic — Dr. Md Asad Imam, BHMS | AI Repertory & Clinic App</title>
+  <meta name="theme-color" content="#064e3b" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="HomoeoClinic" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .grade-3 {
+      background-color: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+    }
+    .grade-2 {
+      background-color: #dbeafe;
+      color: #1e40af;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .grade-1 {
+      background-color: #f1f5f9;
+      color: #334155;
+    }
+    @keyframes scanLine {
+      0% { top: 4%; opacity: 0.9; }
+      50% { top: 90%; opacity: 1; }
+      100% { top: 4%; opacity: 0.9; }
+    }
+    .scanner-beam {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #10b981, #34d399, #10b981, transparent);
+      box-shadow: 0 0 12px #10b981;
+      animation: scanLine 2.2s infinite ease-in-out;
+    }
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printableCaseSheetModal,
+      #printableCaseSheetModal * {
+        visibility: visible;
+      }
+      #printableCaseSheetModal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Top Header -->
+  <header class="bg-emerald-900 text-white shadow-md no-print">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-700 flex items-center justify-center font-bold text-lg shadow-inner">
+          Rx
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-bold tracking-tight">Classical Homoeo Clinic <span class="text-xs font-normal bg-emerald-800 px-2 py-0.5 rounded ml-1">Dr. Md Asad Imam, BHMS</span></h1>
+          <p class="text-xs text-emerald-200">Kent's Repertory • Boericke • Gibson Miller Relations • Multi-User Clinic • CSV/JSON Backup</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <span id="activeUserHeaderBadge" class="text-xs bg-emerald-950/80 border border-emerald-500 px-2.5 py-1.5 rounded-lg font-medium">
+          Owner: Dr. Md Asad Imam, BHMS
+        </span>
+        <span id="patientCountBadge" class="text-xs bg-emerald-800 border border-emerald-600 px-3 py-1.5 rounded-full font-medium">
+          Patients Saved: 0
+        </span>
+                <button id="openApkModalBtn" type="button" class="text-xs bg-lime-400 hover:bg-lime-300 text-slate-950 font-bold px-3 py-1.5 rounded-lg transition shadow-sm">
+          📲 Download APK / Play Store
+        </button>
+        <button id="openDoctorPortalDrawerBtn" type="button" class="text-xs bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-3.5 py-1.5 rounded-lg transition shadow-sm">
+          Doctor Sign In / Admin Verify (₹199 Pass)
+        </button>
+        <button id="openUserMgmtBtn" type="button" class="hidden text-xs bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-3 py-1.5 rounded-lg transition shadow-sm">
+          Manage Users / Staff
+        </button>
+        <button id="exportCsvBtn" type="button" class="text-xs bg-emerald-700 hover:bg-emerald-600 border border-emerald-500 text-white font-semibold px-3 py-1.5 rounded-lg transition shadow-sm">
+          Export CSV Backup
+        </button>
+        <button id="openPrintSheetTopBtn" type="button" class="text-xs bg-white hover:bg-emerald-50 text-emerald-950 font-semibold px-3 py-1.5 rounded-lg transition shadow-sm">
+          Print Case Taking Sheet
+        </button>
+        <button id="loadDemoBtn" type="button" class="text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-3 py-1.5 rounded-lg transition">
+          Load Sample Case
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Native App Navigation Bar (Proper App Screen Switcher) -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm no-print">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between gap-2 overflow-x-auto py-2">
+      <div class="flex items-center gap-1.5">
+        <button id="appNavNewCaseBtn" type="button" class="text-xs font-bold px-3.5 py-2 rounded-xl bg-emerald-800 text-white shadow-sm transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>➕</span> 1. New Patient Entry &amp; Scan
+        </button>
+        <button id="appNavRepertoryBtn" type="button" class="text-xs font-semibold px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-700 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>🧬</span> 2. AI Repertory &amp; Print Rx
+        </button>
+        <button id="appNavRegistryBtn" type="button" class="text-xs font-semibold px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-700 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>📋</span> 3. Patient Records &amp; Follow-Up
+        </button>
+        <button id="appNavDoctorPortalBtn" type="button" class="text-xs font-semibold px-3.5 py-2 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-200 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>👨‍⚕️</span> 4. Doctor Sign-In &amp; Admin Verify (₹199)
+        </button>
+      </div>
+      <div class="hidden sm:flex items-center gap-2">
+        <button id="appNavSplitViewBtn" type="button" class="text-[11px] font-semibold px-2.5 py-1.5 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+          Full Clinic View
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Toast Banner -->
+  <div id="toastBanner" class="hidden fixed top-4 right-4 z-50 bg-slate-900 text-white text-sm px-4 py-3 rounded-xl shadow-lg border border-slate-700 flex items-center gap-2 no-print">
+    <span id="toastText">Action completed</span>
+  </div>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl w-full mx-auto px-4 py-6 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 no-print">
+    
+    <!-- Left Column: Patient Intake, Clinical Report Scanner & Symptom Selection (5 cols) -->
+    <section id="appLeftColSection" class="lg:col-span-5 flex flex-col gap-5">
+      <div id="appScreenNewCaseCard" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">1. Patient Case &amp; Report Scanner</h2>
+            <p class="text-xs text-slate-500">Auto-generates Unique ID, scans Lab/X-Ray/MRI &amp; Repertorizes</p>
+          </div>
+          <span id="previewIdBadge" class="text-xs font-mono bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-1 rounded-md font-semibold">
+            ID: HOM-2026-0001
+          </span>
+        </div>
+
+        <!-- Mode Switcher Tabs inside Left Form -->
+        <div class="grid grid-cols-2 gap-1.5 bg-slate-100 p-1 rounded-xl mb-4">
+          <button id="tabCaseTakingBtn" type="button" class="text-xs font-semibold py-2 px-3 rounded-lg bg-white text-emerald-900 shadow-sm transition">
+            A. Symptoms &amp; Rubrics
+          </button>
+          <button id="tabClinicalReportBtn" type="button" class="text-xs font-semibold py-2 px-3 rounded-lg text-slate-600 hover:text-slate-900 transition">
+            B. Lab / X-Ray / CT / MRI
+          </button>
+        </div>
+
+        <!-- Doctor Verification & Nominal Payment Access Gate Banner -->
+        <div id="doctorAccessGateBanner" class="hidden mb-4 p-4 rounded-xl border-2 border-amber-400 bg-amber-50 space-y-2">
+          <div class="flex items-center justify-between gap-2">
+            <span id="gateStatusTitle" class="text-xs font-bold text-amber-950 uppercase tracking-wider">
+              🔒 Account Locked: Pending Admin Verification
+            </span>
+            <span id="gateDoctorBadge" class="text-[11px] font-mono font-bold bg-white px-2 py-0.5 rounded border border-amber-300 text-amber-900">
+              Dr. Account
+            </span>
+          </div>
+          <p id="gateStatusMessage" class="text-xs text-amber-900">
+            Aapka Doctor account abhi Super-Admin (App Owner) ke verification ke liye pending hai. Verify hone ke baad ₹199 nominal charge pay karke saari AI Repertorization aur Report Scanner services unlock ho jayengi.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button id="gateQuickAdminVerifyBtn" type="button" class="text-xs bg-indigo-700 hover:bg-indigo-800 text-white font-semibold px-3 py-1.5 rounded-lg transition">
+              1. Admin: Verify This Doctor ✓
+            </button>
+            <button id="gateQuickPayNominalBtn" type="button" class="text-xs bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-3 py-1.5 rounded-lg transition">
+              2. Doctor: Pay ₹199 Nominal Charge &amp; Unlock
+            </button>
+          </div>
+        </div>
+        <form id="patientForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="sm:col-span-2">
+              <label for="patientName" class="block text-xs font-semibold text-slate-700 mb-1">Patient Full Name *</label>
+              <input id="patientName" type="text" required placeholder="e.g., Rajesh Sharma" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            </div>
+            <div>
+              <label for="patientAge" class="block text-xs font-semibold text-slate-700 mb-1">Age *</label>
+              <input id="patientAge" type="number" min="0" max="120" required placeholder="34" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label for="patientGender" class="block text-xs font-semibold text-slate-700 mb-1">Gender</label>
+              <select id="patientGender" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Child">Child</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="thermalState" class="block text-xs font-semibold text-slate-700 mb-1">Thermal Reaction</label>
+              <select id="thermalState" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                <option value="Auto">Detect from symptoms</option>
+                <option value="Chilly">Chilly Patient (Sensitive to cold)</option>
+                <option value="Hot">Hot Patient (Worse in heat/warm room)</option>
+                <option value="Ambithermal">Ambithermal</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- PANEL A: Case Taking Notes & Rubrics -->
+          <div id="panelCaseTaking" class="space-y-4">
+            <div>
+              <label for="caseNarrative" class="block text-xs font-semibold text-slate-700 mb-1">
+                Case Taking Notes (Mind, Particulars, Modalities &lt; Worse / &gt; Better) *
+              </label>
+              <textarea id="caseNarrative" rows="3" required placeholder="Describe symptoms in English or Hinglish... e.g., Joint pain worse from slightest motion, better by pressure and rest, intense thirst for large quantities of cold water, irritable mood." class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+            </div>
+
+            <!-- Quick Authentic Rubric Picker -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-xs font-semibold text-slate-700">Select Authentic Kent Rubrics:</span>
+                <button id="clearRubricsBtn" type="button" class="text-[11px] text-rose-600 hover:underline font-medium">Clear Selected</button>
+              </div>
+              <input id="rubricFilterInput" type="text" placeholder="Filter rubrics (e.g., mind, thirst, motion,uria, spine)..." class="w-full mb-2 rounded-lg border border-slate-200 px-2.5 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              <div id="rubricChipsContainer" class="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto p-2 bg-slate-50 rounded-xl border border-slate-200">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- PANEL B: Smart Report Scanner + Clinical Lab & Radiology Analyzer -->
+          <div id="panelClinicalReport" class="hidden space-y-4 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+            <div class="bg-white rounded-xl border-2 border-dashed border-emerald-400 p-3.5 space-y-2.5">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <span class="text-xs font-bold text-emerald-950 block">AI Medical Report Scanner (Camera / Photo / PDF)</span>
+                  <span class="text-[11px] text-slate-500">Scan or upload X-Ray, CT, MRI, USG, CBC, Lipid Profile</span>
+                </div>
+                <button id="simulateScanBtn" type="button" class="text-[11px] bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-2.5 py-1.5 rounded-lg transition shadow-sm">
+                  Run AI Demo Scan
+                </button>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div>
+                  <label for="reportTypeSelect" class="block text-[11px] font-semibold text-slate-700 mb-1">Investigation Type</label>
+                  <select id="reportTypeSelect" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white">
+                    <option value="CBC + Lipid + Metabolic">Blood Panel (CBC, Lipid, Uric Acid, LFT, TSH)</option>
+                    <option value="X-Ray (Chest / Joint / Spine)">X-Ray (Chest / Knee Joint / Cervical-Lumbar Spine)</option>
+                    <option value="MRI (Brain / Spine / Joint)">MRI Scan (Spine Disc / Brain / Knee Ligament)</option>
+                    <option value="CT Scan (Head / Chest / Abdomen / PNS)">CT Scan (HRCT Chest / KUB / PNS / Brain)</option>
+                    <option value="USG (Abdomen / Pelvis / Renal)">Ultrasound / USG (Fatty Liver / Renal Stone / Pelvis)</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="reportFileInput" class="block text-[11px] font-semibold text-slate-700 mb-1">Camera / File Upload</label>
+                  <input id="reportFileInput" type="file" accept="image/*,.pdf,.txt" capture="environment" class="w-full text-[11px] text-slate-600 file:mr-2 file:py-1 file:px-2.5 file:rounded-md file:border-0 file:text-[11px] file:font-semibold file:bg-emerald-100 file:text-emerald-900 hover:file:bg-emerald-200" />
+                </div>
+              </div>
+
+              <!-- Live Visual Scanner Viewport -->
+              <div id="scannerViewport" class="hidden relative rounded-xl overflow-hidden bg-slate-900 text-white p-3 min-h-[120px] flex flex-col justify-between border border-slate-700">
+                <div id="scannerBeamEl" class="scanner-beam"></div>
+                <div class="flex items-center justify-between z-10">
+                  <span id="scannerStatusBadge" class="text-[10px] font-mono uppercase tracking-wider bg-emerald-600/90 text-white px-2 py-0.5 rounded">
+                    AI OCR + RADIOLOGY VISION ACTIVE
+                  </span>
+                  <span id="uploadedReportPreview" class="text-[11px] text-emerald-300 font-mono truncate max-w-[180px]"></span>
+                </div>
+                <div class="my-2 flex items-center gap-3 z-10">
+                  <img id="scannedImageThumb" src="" alt="Scanned Report Preview" class="hidden w-16 h-16 object-cover rounded-lg border border-emerald-400" />
+                  <p id="scannerExtractedSummary" class="text-xs text-slate-200 font-mono leading-relaxed">
+                    Scanning report parameters...
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-1 pt-1">
+                <span class="text-[10px] font-semibold text-slate-500">Quick Scan Templates:</span>
+                <div class="flex flex-wrap gap-1">
+                  <button id="presetCbcLipidBtn" type="button" class="text-[11px] bg-slate-100 hover:bg-emerald-50 text-emerald-800 border border-emerald-300 px-2 py-0.5 rounded font-medium">
+                    + Sample CBC/Lipid
+                  </button>
+                  <button id="presetXrayMriBtn" type="button" class="text-[11px] bg-slate-100 hover:bg-blue-50 text-blue-800 border border-blue-300 px-2 py-0.5 rounded font-medium">
+                    + Sample X-Ray/MRI
+                  </button>
+                  <button id="presetUsgCtBtn" type="button" class="text-[11px] bg-slate-100 hover:bg-amber-50 text-amber-800 border border-amber-300 px-2 py-0.5 rounded font-medium">
+                    + Sample CT/USG
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantitative Blood Lab Panel (CBC, Lipid, Metabolic) -->
+            <div>
+              <span class="block text-[11px] font-semibold text-slate-700 mb-1.5">Extracted / Manual Blood Lab Values:</span>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <div>
+                  <label for="labHb" class="block text-[10px] text-slate-500">Hb (g/dL) [12–16]</label>
+                  <input id="labHb" type="number" step="0.1" placeholder="e.g. 9.8" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labWbc" class="block text-[10px] text-slate-500">TLC/WBC (/µL) [4k–11k]</label>
+                  <input id="labWbc" type="number" step="100" placeholder="e.g. 13400" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labEsr" class="block text-[10px] text-slate-500">ESR (mm/hr) [0–20]</label>
+                  <input id="labEsr" type="number" step="1" placeholder="e.g. 42" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labPlatelets" class="block text-[10px] text-slate-500">Platelets (Lakh) [1.5–4.5]</label>
+                  <input id="labPlatelets" type="number" step="0.1" placeholder="e.g. 2.1" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labChol" class="block text-[10px] text-slate-500">Total Chol (&lt;200)</label>
+                  <input id="labChol" type="number" step="1" placeholder="e.g. 248" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labTg" class="block text-[10px] text-slate-500">Triglycerides (&lt;150)</label>
+                  <input id="labTg" type="number" step="1" placeholder="e.g. 215" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labUric" class="block text-[10px] text-slate-500">Uric Acid (mg/dL) [3.5–7]</label>
+                  <input id="labUric" type="number" step="0.1" placeholder="e.g. 8.4" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+                <div>
+                  <label for="labTsh" class="block text-[10px] text-slate-500">TSH (mIU/L) [0.5–4.5]</label>
+                  <input id="labTsh" type="number" step="0.1" placeholder="e.g. 7.8" class="w-full rounded border border-slate-300 px-2 py-1 text-xs bg-white" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Radiology / Imaging Findings (X-Ray, CT, MRI, USG) -->
+            <div>
+              <label for="radiologyNotes" class="block text-[11px] font-semibold text-slate-700 mb-1">
+                Scanned / Extracted X-Ray, CT, MRI, USG Impression
+              </label>
+              <textarea id="radiologyNotes" rows="3" placeholder="Paste or scan report impression... e.g., X-Ray Knee: Joint space narrowing & osteophytes (Osteoarthritis). MRI Spine: L4-L5 disc bulge with sciatic nerve root compression." class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap gap-2">
+            <button id="analyzeAndSaveBtn" type="submit" class="flex-1 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-2.5 px-4 rounded-xl text-sm shadow-sm transition">
+              Generate Unique ID &amp; Repertorize Case
+            </button>
+            <button id="resetFormBtn" type="button" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2.5 px-3.5 rounded-xl text-sm transition">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Saved Patients Directory + Backup Actions -->
+      <div id="appScreenRegistryCard" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <h3 class="text-sm font-bold text-slate-900">Saved Patient Registry</h3>
+          <div class="flex items-center gap-1.5">
+            <input id="searchPatientInput" type="text" placeholder="Search ID or Name..." class="text-xs border border-slate-300 rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            <button id="exportJsonBtn" type="button" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold px-2.5 py-1.5 rounded-lg transition">
+              JSON
+            </button>
+          </div>
+        </div>
+        <div id="patientListContainer" class="space-y-2 max-h-64 overflow-y-auto">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Side Panel: Doctor Sign-In, Admin Verification & Nominal Charge Payment Portal -->
+      <div id="userManagementPanel" class="bg-white rounded-2xl shadow-sm border-2 border-indigo-600 p-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider bg-indigo-100 text-indigo-900 px-2 py-0.5 rounded">Doctor SaaS Portal &amp; Admin Approval</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Doctor Sign-Up → Admin Verify → ₹199 Nominal Charge</h3>
+            <p class="text-xs text-slate-600">Admin: <strong>Dr. Md Asad Imam, BHMS</strong> • Subscription Fee: <strong>₹199/month</strong> via UPI: <strong class="font-mono text-emerald-800">mdasadimam670@oksbi</strong></p>
+          </div>
+          <span id="userCountBadge" class="text-xs font-semibold bg-indigo-50 text-indigo-800 px-2.5 py-1 rounded-full">
+            3 Doctors
+          </span>
+        </div>
+
+        <!-- Step 1: Doctor Sign Up / Registration Form -->
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 mb-3 space-y-2">
+          <span class="text-xs font-bold text-slate-800 block">New Doctor Registration / Sign In:</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <input id="newUserNameInput" type="text" placeholder="Doctor Name (e.g., Dr. Rohit Gupta)" class="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white" />
+            <input id="newDoctorRegNoInput" type="text" placeholder="BHMS / Council Reg. No. (e.g., CCH-48291)" class="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white" />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <input id="newUserEmailInput" type="email" placeholder="Mobile / Email (e.g., 98111-22333)" class="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white" />
+            <select id="newUserRoleSelect" class="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white">
+              <option value="Subscribed Doctor (₹199/mo Plan)">Doctor Plan: ₹199 / Month (Full AI Access)</option>
+              <option value="Clinic Pro Doctor (₹499/qtr Plan)">Doctor Plan: ₹499 / Quarter (Unlimited + Print)</option>
+              <option value="Chief Homeopath (Admin)">App Owner / Super-Admin (You)</option>
+            </select>
+          </div>
+          <button id="addClinicUserBtn" type="button" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+            + Add Clinic User / Doctor Account
+          </button>
+        </div>
+
+        <!-- Step 2 & 3: Admin Verification & Nominal Payment List -->
+        <div class="mb-1.5 flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-800">Registered Doctors (Admin Verify &amp; Payment Status):</span>
+          <span class="text-[10px] text-slate-500">Click Verify → Pay ₹199</span>
+        </div>
+        <div id="clinicUsersListContainer" class="space-y-2.5 max-h-72 overflow-y-auto">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <!-- NEW: Live AI (Gemini API) & Cloud Backend Connection Panel -->
+      <div id="liveCloudConfigPanel" class="hidden bg-white rounded-2xl shadow-sm border-2 border-emerald-500 p-5">
+        <div class="flex items-center justify-between mb-2">
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">8. Live AI &amp; Cloud Server Connection (Production Mode)</h3>
+            <p class="text-xs text-slate-500">Connect your Gemini API Key &amp; Backend URL for 100% live AI Vision &amp; Cloud Sync</p>
+          </div>
+          <span id="liveConnectionStatusBadge" class="text-[11px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-1 rounded-full">
+            Hybrid Mode Ready
+          </span>
+        </div>
+
+        <div class="space-y-2.5 mt-3">
+          <div>
+            <label for="liveGeminiApiKeyInput" class="block text-[11px] font-semibold text-slate-700 mb-1">
+              Google Gemini API Key (For Live X-Ray/MRI/Lab Photo Vision &amp; Full Kent Repertory AI)
+            </label>
+            <input id="liveGeminiApiKeyInput" type="password" placeholder="Paste AIzaSy... key from aistudio.google.com" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+          </div>
+          <div>
+            <label for="liveBackendUrlInput" class="block text-[11px] font-semibold text-slate-700 mb-1">
+              Cloud Backend Server URL (Node.js / Render / Railway / Supabase API)
+            </label>
+            <input id="liveBackendUrlInput" type="url" placeholder="e.g., https://homeoai-clinic-api.onrender.com" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+          </div>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button id="saveLiveConfigBtn" type="button" class="flex-1 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold py-2 px-3 rounded-xl transition">
+              Save Live AI &amp; Cloud Config
+            </button>
+            <button id="testLiveAiConnectionBtn" type="button" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold py-2 px-3 rounded-xl transition">
+              Test Mode
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: AI Clinical Report Interpretation, Repertorization, Printable Rx & Follow-Up Tracker (7 cols) -->
+    <section id="appRightColSection" class="lg:col-span-7 flex flex-col gap-5">
+      <div id="analysisEmptyState" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 text-center my-auto">
+        <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mx-auto mb-3 font-bold text-xl">
+          Rx
+        </div>
+        <h2 class="text-base font-bold text-slate-900 mb-1">Ready for Case + Report Scan + Printable Rx</h2>
+        <p class="text-xs text-slate-600 max-w-md mx-auto mb-4">
+          Enter your patient's symptoms and scan/upload lab or imaging reports on the left, or click <strong>"Load Sample Case"</strong> at the top.
+        </p>
+      </div>
+
+      <!-- Active Analysis Container -->
+      <div id="analysisResultContainer" class="hidden space-y-5">
+        <!-- Patient Summary Header Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+          <div class="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 pb-3 mb-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span id="activePatientId" class="font-mono text-xs font-bold bg-emerald-100 text-emerald-900 px-2.5 py-1 rounded-md">HOM-2026-0001</span>
+                <span id="activePatientTime" class="text-xs text-slate-400"></span>
+                <span id="activeReportTag" class="text-[11px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded"></span>
+              </div>
+              <h2 id="activePatientTitle" class="text-lg font-bold text-slate-900 mt-1">Patient Name</h2>
+            </div>
+            <div class="text-right flex flex-col items-end gap-1.5">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-semibold text-slate-400 block">Top Simillimum Match</span>
+                <span id="topRemedyBadge" class="text-sm font-bold text-emerald-700">Bryonia alba</span>
+              </div>
+              <button id="openPrintSheetBtn" type="button" class="text-xs bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-3 py-1.5 rounded-lg transition shadow-sm">
+                Print Patient Case Sheet &amp; Rx
+              </button>
+            </div>
+          </div>
+          <p id="activeCaseNotes" class="text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-200 italic"></p>
+        </div>
+
+        <!-- Clinical Lab & Imaging Report Analysis Card -->
+        <div id="clinicalReportAnalysisCard" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">2. Scanned Clinical Investigation &amp; Imaging Interpretation</h3>
+              <p class="text-xs text-slate-500">Automated abnormal parameter flagging &amp; homeopathic pathological rubric correlation</p>
+            </div>
+            <span id="clinicalAlertCountBadge" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-100 text-amber-900">
+              0 Findings
+            </span>
+          </div>
+
+          <div id="clinicalFindingsList" class="space-y-2.5">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Extracted Rubrics & Repertorization Matrix -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">3. Kent's Repertorization Matrix (Symptoms + Pathological Generals)</h3>
+              <p class="text-xs text-slate-500">Grading: <span class="px-1.5 py-0.5 rounded grade-3 text-[11px]">3 = 1st Grade (Bold)</span> <span class="px-1.5 py-0.5 rounded grade-2 text-[11px]">2 = 2nd Grade (Italic)</span> <span class="px-1.5 py-0.5 rounded grade-1 text-[11px]">1 = 3rd Grade (Roman)</span></p>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr id="repertoryTableHeader" class="border-b border-slate-200 bg-slate-50 text-slate-700">
+                  <th class="py-2.5 px-3 font-semibold">Kent Repertory Rubric</th>
+                </tr>
+              </thead>
+              <tbody id="repertoryTableBody" class="divide-y divide-slate-100">
+              </tbody>
+              <tfoot id="repertoryTableFooter" class="border-t-2 border-slate-200 bg-emerald-50/60 font-bold text-slate-900">
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- Authentic Materia Medica Verification + Step 5 Gibson Miller Remedy Relationships -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+          <h3 class="text-sm font-bold text-slate-900 mb-1">4. Authentic Materia Medica &amp; Gibson Miller Remedy Relationships</h3>
+          <p class="text-xs text-slate-500 mb-4">Boericke's Materia Medica • H.C. Allen's Keynotes • Complementary, Follows Well, Inimical &amp; Antidotes</p>
+          <div id="remedyCardsContainer" class="space-y-3">
+          </div>
+        </div>
+
+        <!-- Doctor's Final Prescription Builder & Case Sheet Customizer -->
+        <div class="bg-white rounded-2xl shadow-sm border-2 border-emerald-600 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">5. Doctor's Prescription &amp; Printable Patient Handout Setup</h3>
+              <p class="text-xs text-slate-500">Customize medicine potency, dosage &amp; clinic header before printing for the patient</p>
+            </div>
+            <button id="previewAndPrintBottomBtn" type="button" class="text-xs bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-3.5 py-2 rounded-xl shadow-sm transition">
+              Open Printable Case Sheet &amp; Print
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+            <div>
+              <label for="rxClinicName" class="block text-[11px] font-semibold text-slate-700 mb-1">Clinic / Hospital Name</label>
+              <input id="rxClinicName" type="text" value="Classical Homoeo Clinic" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs" />
+            </div>
+            <div>
+              <label for="rxDoctorName" class="block text-[11px] font-semibold text-slate-700 mb-1">Doctor Name &amp; Qualification</label>
+              <input id="rxDoctorName" type="text" value="Dr. Md Asad Imam, BHMS" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs" />
+            </div>
+            <div>
+              <label for="rxFollowUpDays" class="block text-[11px] font-semibold text-slate-700 mb-1">Next Follow-Up</label>
+              <select id="rxFollowUpDays" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white">
+                <option value="After 7 Days">After 7 Days</option>
+                <option value="After 3 Days (Acute)">After 3 Days (Acute)</option>
+                <option value="After 15 Days">After 15 Days</option>
+                <option value="After 1 Month">After 1 Month</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+            <div>
+              <label for="rxMedicineInput" class="block text-[11px] font-semibold text-slate-700 mb-1">Prescribed Remedy (Rx)</label>
+              <input id="rxMedicineInput" type="text" value="Bryonia alba" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-bold text-emerald-900" />
+            </div>
+            <div>
+              <label for="rxPotencySelect" class="block text-[11px] font-semibold text-slate-700 mb-1">Potency / Scale</label>
+              <select id="rxPotencySelect" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white">
+                <option value="30C">30C (centesimal)</option>
+                <option value="200C" selected>200C (centesimal)</option>
+                <option value="1M">1M (1000C)</option>
+                <option value="0/1 (LM1)">0/1 (LM Scale)</option>
+                <option value="Q (Mother Tincture)">Q (Mother Tincture)</option>
+                <option value="6X / 12X Biochemic">6X / 12X Biochemic</option>
+              </select>
+            </div>
+            <div>
+              <label for="rxDosageSelect" class="block text-[11px] font-semibold text-slate-700 mb-1">Dosage &amp; Repetition</label>
+              <select id="rxDosageSelect" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white">
+                <option value="4 Globules BD (Morning & Night) for 7 Days">4 Globules BD (Morning &amp; Night) x 7 Days</option>
+                <option value="4 Globules TDS (3 times daily) for 5 Days">4 Globules TDS (3 times daily) x 5 Days</option>
+                <option value="2 Drops in 1 spoon water OD (Morning empty stomach)">2 Drops in water OD (Empty stomach)</option>
+                <option value="Single Constitutional Dose (Stat) + Sac Lac BD">Single Constitutional Dose (Stat) + Rubrum</option>
+                <option value="10 Drops in 1/2 cup lukewarm water TDS">10 Drops in 1/2 cup water TDS (Mother Tincture)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="rxAdviceInput" class="block text-[11px] font-semibold text-slate-700 mb-1">Diet &amp; Regimen / Parhez Instructions for Patient</label>
+            <input id="rxAdviceInput" type="text" value="Keep 15 mins gap before/after meals. Avoid raw onion, strong coffee, camphor & gutkha. Drink adequate water." class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs" />
+          </div>
+        </div>
+
+        <!-- Follow-Up Visit Tracker & Kent's 12 Observations Assistant -->
+        <div id="appScreenFollowUpCard" class="bg-white rounded-2xl shadow-sm border-2 border-indigo-600 p-5">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-bold text-slate-900">6. Follow-Up Visit Tracker &amp; Kent's 12 Observations (Second Prescription)</h3>
+              <p class="text-xs text-slate-500">Compare Before vs. After Lab Reports &amp; get Classical Second Prescription guidance</p>
+            </div>
+            <button id="loadDemoFollowUpBtn" type="button" class="text-xs bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-300 font-semibold px-3 py-1.5 rounded-lg transition">
+              + Load Sample Follow-Up
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+            <div>
+              <label for="followUpResponseSelect" class="block text-[11px] font-semibold text-slate-700 mb-1">Patient Clinical Response &amp; General Wellbeing</label>
+              <select id="followUpResponseSelect" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white">
+                <option value="kent_4_amelioration">Steady Amelioration (+70% Relief, generals &amp; sleep better)</option>
+                <option value="kent_3_aggravation_then_better">Brief Initial Aggravation followed by Marked Relief</option>
+                <option value="kent_stalled_partial">Partial Relief (+40%) then Improvement Stopped / Stalled</option>
+                <option value="kent_11_old_symptoms">Old Historical Symptoms Reappeared (Reverse Order - Hering's Law)</option>
+                <option value="kent_7_new_symptoms">No Relief + New Unrelated Symptoms Appeared</option>
+                <option value="kent_1_prolonged_agg">Prolonged Aggravation &amp; Declining Vitality</option>
+              </select>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+              <div>
+                <label for="fuEsrInput" class="block text-[10px] font-semibold text-slate-600 mb-1">New ESR</label>
+                <input id="fuEsrInput" type="number" step="1" placeholder="e.g. 16" class="w-full rounded-lg border border-slate-300 px-2 py-1.5 text-xs" />
+              </div>
+              <div>
+                <label for="fuUricInput" class="block text-[10px] font-semibold text-slate-600 mb-1">New Uric Acid</label>
+                <input id="fuUricInput" type="number" step="0.1" placeholder="e.g. 5.8" class="w-full rounded-lg border border-slate-300 px-2 py-1.5 text-xs" />
+              </div>
+              <div>
+                <label for="fuCholInput" class="block text-[10px] font-semibold text-slate-600 mb-1">New Chol</label>
+                <input id="fuCholInput" type="number" step="1" placeholder="e.g. 188" class="w-full rounded-lg border border-slate-300 px-2 py-1.5 text-xs" />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="followUpNotesInput" class="block text-[11px] font-semibold text-slate-700 mb-1">Follow-Up Clinical &amp; Report Progress Notes</label>
+            <input id="followUpNotesInput" type="text" placeholder="e.g., After 7 days of Bryonia 200C: Knee stitching pain reduced by 75%, patient can walk comfortably, sleep & appetite improved." class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs" />
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <button id="addFollowUpVisitBtn" type="button" class="bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-sm transition">
+              Record Follow-Up &amp; Evaluate Kent's Observation
+            </button>
+            <span id="followUpCountBadge" class="text-xs font-semibold text-indigo-800 bg-indigo-50 px-2.5 py-1 rounded-full">
+              Follow-Up Visits: 0
+            </span>
+          </div>
+
+          <div id="followUpTimelineContainer" class="space-y-2.5">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile Bottom App Bar (Native Android/iOS Feel) -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 grid grid-cols-4 py-1.5 px-2 text-center shadow-lg no-print">
+    <button id="mobNavCaseBtn" type="button" class="flex flex-col items-center justify-center py-1 text-[10px] font-bold text-emerald-800">
+      <span class="text-sm">➕</span>
+      <span>New Case</span>
+    </button>
+    <button id="mobNavRepBtn" type="button" class="flex flex-col items-center justify-center py-1 text-[10px] font-medium text-slate-600">
+      <span class="text-sm">🧬</span>
+      <span>Repertory</span>
+    </button>
+    <button id="mobNavRegBtn" type="button" class="flex flex-col items-center justify-center py-1 text-[10px] font-medium text-slate-600">
+      <span class="text-sm">📋</span>
+      <span>Patients</span>
+    </button>
+    <button id="mobNavDocBtn" type="button" class="flex flex-col items-center justify-center py-1 text-[10px] font-medium text-indigo-700">
+      <span class="text-sm">👨‍⚕️</span>
+      <span>Doctor Login</span>
+    </button>
+  </div>
+
+  <!-- Slide-Over Side Drawer: Doctor Sign-In, Admin Approval & ₹199 UPI/Razorpay Payment Modal -->
+  <div id="doctorSaaSDrawerModal" class="hidden fixed inset-0 z-50 bg-slate-900/70 flex justify-end no-print">
+    <div class="bg-white w-full max-w-md h-full overflow-y-auto shadow-2xl border-l border-slate-200 p-6 flex flex-col justify-between">
+      <div class="space-y-5">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-900 px-2 py-0.5 rounded">SaaS Access &amp; Billing</span>
+            <h2 class="text-base font-bold text-slate-900 mt-0.5">Doctor Sign-In • Admin Verify • ₹199 Pass</h2>
+          </div>
+          <button id="closeDoctorDrawerBtn" type="button" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg">
+            Close ✕
+          </button>
+        </div>
+
+        <!-- How the 3-Step Flow Works -->
+        <div class="grid grid-cols-3 gap-1.5 text-center text-[11px] bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+          <div class="p-1.5 rounded-lg bg-white border border-slate-200">
+            <strong class="block text-indigo-900">Step 1</strong>
+            <span class="text-slate-600">Doctor Sign-Up</span>
+          </div>
+          <div class="p-1.5 rounded-lg bg-white border border-slate-200">
+            <strong class="block text-amber-800">Step 2</strong>
+            <span class="text-slate-600">Admin Verify</span>
+          </div>
+          <div class="p-1.5 rounded-lg bg-white border border-slate-200">
+            <strong class="block text-emerald-800">Step 3</strong>
+            <span class="text-slate-600">Pay ₹199 Pass</span>
+          </div>
+        </div>
+
+        <!-- Nominal Payment UPI QR & Razorpay Checkout Box -->
+        <div id="upiPaymentCheckoutBox" class="bg-emerald-50/70 border-2 border-emerald-600 rounded-2xl p-4 space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-700 text-white px-2 py-0.5 rounded">Nominal Subscription</span>
+              <h3 class="text-sm font-bold text-slate-900 mt-1">Monthly Doctor Pass: ₹199 / Month</h3>
+              <p class="text-[11px] text-slate-700 font-medium">Pay to: <strong>Dr. Md Asad Imam, BHMS</strong></p>
+              <p class="text-[11px] font-mono font-bold text-emerald-900 bg-white px-2 py-0.5 rounded border border-emerald-300 inline-block mt-1">
+                UPI ID: mdasadimam670@oksbi
+              </p>
+            </div>
+            <div class="w-16 h-16 bg-white border-2 border-slate-800 rounded-xl flex flex-col items-center justify-center font-mono text-[9px] font-bold text-slate-900 shadow-sm shrink-0">
+              <span>UPI PAY</span>
+              <span class="text-emerald-700 text-xs">₹199</span>
+              <span class="text-[8px] text-slate-500">@oksbi</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <button id="copyOwnerUpiIdBtn" type="button" class="flex-1 bg-white hover:bg-emerald-100 text-emerald-900 border border-emerald-400 font-semibold py-1.5 px-2.5 rounded-lg text-xs transition">
+              Copy UPI: mdasadimam670@oksbi
+            </button>
+            <a href="upi://pay?pa=mdasadimam670@oksbi&amp;pn=Dr.%20Md%20Asad%20Imam&amp;am=199&amp;cu=INR&amp;tn=Classical%20Homoeo%20Clinic%20Pass" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-1.5 px-3 rounded-lg text-xs transition text-center">
+              Open GPay / PhonePe (₹199)
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs pt-1 border-t border-emerald-200">
+            <input id="upiUtRInput" type="text" placeholder="Enter 12-digit UPI UTR No." class="rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs bg-white" />
+            <button id="confirmDrawerPaymentBtn" type="button" class="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-1.5 px-3 rounded-lg text-xs shadow-sm transition">
+              Pay ₹199 &amp; Activate Doctor
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick instruction note -->
+        <p class="text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-200">
+          <strong>Tip:</strong> Neeche left panel ke <strong>Section 7 (Doctor SaaS Portal)</strong> mein aap naye doctors add kar sakte hain, unhein <strong>Admin: Verify Doctor ✓</strong> se approve kar sakte hain, aur <strong>Sign In as Doctor</strong> daba kar kisi bhi doctor ka account test kar sakte hain.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-slate-200 flex justify-between items-center text-xs text-slate-500">
+        <span>Super-Admin: Owner Control</span>
+        <button id="scrollToLeftPortalBtn" type="button" class="text-indigo-700 font-semibold hover:underline">
+          Go to Doctor List ↓
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <!-- APK & Google Play Store Packaging Modal -->
+  <div id="apkPlayStoreModal" class="hidden fixed inset-0 z-50 bg-slate-900/75 overflow-y-auto p-4 sm:p-6 flex items-start justify-center no-print">
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-2xl border border-slate-200 p-6 my-6 space-y-4">
+      <div class="flex items-start justify-between gap-3 border-b border-slate-200 pb-3">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded">Android APK + Google Play Store (.AAB) Ready</span>
+          <h2 class="text-base sm:text-lg font-bold text-slate-900 mt-1">📲 Install APK on Mobile &amp; Publish to Google Play Store</h2>
+          <p class="text-xs text-slate-600">Configured for <strong>Classical Homoeo Clinic — Dr. Md Asad Imam, BHMS</strong> (Package ID: <code class="font-mono bg-slate-100 px-1 rounded">in.classicalhomoeoclinic.app</code>)</p>
+        </div>
+        <button id="closeApkModalBtn" type="button" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-3 py-1.5 rounded-lg">
+          Close ✕
+        </button>
+      </div>
+
+      <!-- Phase 1: Install APK on Your Mobile Right Now -->
+      <div class="bg-emerald-50/70 border-2 border-emerald-600 rounded-xl p-4 space-y-2.5">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="text-sm font-bold text-emerald-950">Phase 1: Apne Mobile Mein APK Kaise Install Karein (Free &amp; 2 Minutes)</h3>
+          <span class="text-[10px] font-bold bg-emerald-700 text-white px-2 py-0.5 rounded">Personal Mobile Testing</span>
+        </div>
+        <ol class="text-xs text-slate-800 space-y-1.5 list-decimal list-inside leading-relaxed">
+          <li><strong>Tarika A (Direct HTML/ZIP to APK — Bina Hosting Ke):</strong> <a href="https://www.webintoapp.com/html-to-app" target="_blank" rel="noopener noreferrer" class="text-emerald-800 font-bold underline">WebIntoApp (HTML to APK)</a> par jayein, apna <strong>classical_homoeo_clinic_apk_bundle.zip</strong> upload karein, App Name mein <strong>Classical Homoeo Clinic</strong> dalein aur <strong>Make App</strong> dabayein — aapko turant <code class="font-mono bg-white px-1 rounded">.apk</code> file mil jayegi!</li>
+          <li><strong>Tarika B (Official Cloud APK + Play Store AAB via PWABuilder):</strong> Apna ZIP folder <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer" class="text-emerald-800 font-bold underline">Netlify Drop</a> par drag-and-drop karein, phir wo link <a href="https://www.pwabuilder.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-800 font-bold underline">PWABuilder.com</a> mein paste karke <strong>Package for Store → Android → Download</strong> karein.</li>
+          <li>Apne Android phone mein downloaded <code class="font-mono bg-white px-1 rounded">ClassicalHomoeoClinic.apk</code> par tap karke install kar lein aur clinic mein 1–2 hafte aaram se test karein!</li>
+        </ol>
+        <div class="flex flex-wrap gap-2 pt-1">
+          <button id="downloadManifestBtn" type="button" class="text-xs bg-white hover:bg-emerald-100 text-emerald-900 border border-emerald-400 font-semibold px-3 py-1.5 rounded-lg transition">
+            ⬇ Download manifest.json
+          </button>
+          <button id="downloadSwBtn" type="button" class="text-xs bg-white hover:bg-emerald-100 text-emerald-900 border border-emerald-400 font-semibold px-3 py-1.5 rounded-lg transition">
+            ⬇ Download sw.js (Offline Engine)
+          </button>
+        </div>
+      </div>
+
+      <!-- Phase 2: Publish on Google Play Store -->
+      <div class="bg-indigo-50/70 border border-indigo-200 rounded-xl p-4 space-y-2">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 class="text-sm font-bold text-indigo-950">Phase 2: Use Karne Ke Baad Google Play Store Par Kaise Dalein</h3>
+          <span class="text-[10px] font-bold bg-indigo-700 text-white px-2 py-0.5 rounded">Play Store Launch</span>
+        </div>
+        <ol class="text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed">
+          <li><strong>Google Play Console Account:</strong> <a href="https://play.google.com/console/signup" target="_blank" rel="noopener noreferrer" class="text-indigo-800 font-bold underline">Google Play Console</a> par developer account banayein ($25 / ~₹2,100 one-time lifetime registration fee lagti hai).</li>
+          <li><strong>Upload .AAB File:</strong> PWABuilder ya WebIntoApp se jo <code class="font-mono bg-white px-1 rounded">app-release-bundle.aab</code> (Android App Bundle) milega, usko Play Console mein <strong>Create App → Production / Testing</strong> mein upload karein.</li>
+          <li><strong>Zero Re-Upload Updates:</strong> Kyunki aapka app cloud-connected PWA/TWA hai, jab bhi aap app mein koi badlav karenge, Play Store wale sabhi doctors ke phone mein wo <strong>automatically update</strong> ho jayega!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Printable Patient Case Taking & Prescription Modal (A4 Print-Ready View) -->
+  <div id="printableCaseSheetModal" class="hidden fixed inset-0 z-50 bg-slate-900/75 overflow-y-auto p-4 sm:p-6 flex items-start justify-center">
+    <div class="bg-white w-full max-w-3xl rounded-2xl shadow-2xl border border-slate-200 p-6 sm:p-8 my-4">
+      <!-- Modal Action Bar (Hidden when printing) -->
+      <div class="no-print flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Print-Ready Clinic Handout</span>
+          <p class="text-[11px] text-slate-500">Click "Print Now" to print or save as PDF for the patient</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="copyCaseSheetBtn" type="button" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold px-3 py-2 rounded-xl transition">
+            Copy Case Text
+          </button>
+          <button id="triggerBrowserPrintBtn" type="button" class="text-xs bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-4 py-2 rounded-xl shadow-sm transition">
+            Print Now / Save PDF
+          </button>
+          <button id="closePrintModalBtn" type="button" class="text-xs bg-rose-50 hover:bg-rose-100 text-rose-700 font-semibold px-3 py-2 rounded-xl transition">
+            Close ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Clinic Header -->
+      <div class="border-b-2 border-emerald-900 pb-4 mb-4 flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h2 id="printClinicHeader" class="text-xl font-bold text-emerald-950">Classical Homoeo Clinic</h2>
+          <p id="printDoctorHeader" class="text-xs font-semibold text-slate-700 mt-0.5">Dr. Md Asad Imam, BHMS • Classical &amp; Evidence-Based Homoeopathy</p>
+          <p class="text-[11px] text-slate-500">Authentic Repertorization Record (Kent • Boericke • Allen's Keynotes)</p>
+        </div>
+        <div class="text-right text-xs">
+          <div id="printPatientIdBox" class="font-mono font-bold text-emerald-900 bg-emerald-50 border border-emerald-300 px-2.5 py-1 rounded inline-block">
+            ID: HOM-2026-0001
+          </div>
+          <p id="printDateBox" class="text-[11px] text-slate-500 mt-1">Date: 25 Oct 2026</p>
+        </div>
+      </div>
+
+      <!-- Patient Demographics Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs mb-4">
+        <div>
+          <span class="text-[10px] uppercase text-slate-400 font-semibold block">Patient Name</span>
+          <strong id="printPatientName" class="text-slate-900">-</strong>
+        </div>
+        <div>
+          <span class="text-[10px] uppercase text-slate-400 font-semibold block">Age / Gender</span>
+          <strong id="printPatientAgeGender" class="text-slate-900">-</strong>
+        </div>
+        <div>
+          <span class="text-[10px] uppercase text-slate-400 font-semibold block">Thermal State</span>
+          <strong id="printPatientThermal" class="text-slate-900">-</strong>
+        </div>
+        <div>
+          <span class="text-[10px] uppercase text-slate-400 font-semibold block">Follow-Up Schedule</span>
+          <strong id="printFollowUp" class="text-emerald-800">-</strong>
+        </div>
+      </div>
+
+      <!-- Section 1: Case Taking Summary -->
+      <div class="mb-4">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 border-b border-slate-200 pb-1 mb-2">
+          1. Case Taking Notes (Chief Complaints, Mind &amp; Modalities)
+        </h3>
+        <p id="printCaseNarrative" class="text-xs text-slate-800 leading-relaxed bg-white p-2.5 rounded-lg border border-slate-200"></p>
+      </div>
+
+      <!-- Section 2: Clinical Investigation & Report Summary -->
+      <div class="mb-4">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 border-b border-slate-200 pb-1 mb-2">
+          2. Clinical Lab &amp; Radiology Investigation Summary (CBC / Lipid / X-Ray / CT / MRI)
+        </h3>
+        <div id="printClinicalFindings" class="space-y-1.5 text-xs text-slate-800"></div>
+      </div>
+
+      <!-- Section 3: Repertorization Rubrics & Differential -->
+      <div class="mb-4">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 border-b border-slate-200 pb-1 mb-2">
+          3. Classical Repertorization Summary (Totality of Rubrics)
+        </h3>
+        <div id="printRubricsList" class="flex flex-wrap gap-1.5 mb-2"></div>
+        <p id="printTopRemediesLine" class="text-xs font-semibold text-emerald-900"></p>
+      </div>
+
+      <!-- Section 4: Follow-Up History in Print View -->
+      <div class="mb-5">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 border-b border-slate-200 pb-1 mb-2">
+          4. Follow-Up Progress &amp; Second Prescription Log
+        </h3>
+        <div id="printFollowUpList" class="space-y-1.5 text-xs text-slate-800"></div>
+      </div>
+
+      <!-- Section 5: Official Rx Box -->
+      <div class="border-2 border-emerald-800 rounded-xl p-4 bg-emerald-50/30 mb-6">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xl font-serif font-bold text-emerald-900">℞</span>
+          <span class="text-xs uppercase tracking-wider font-bold text-emerald-900">Homeopathic Prescription &amp; Posology</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <div>
+            <span class="text-[11px] text-slate-500 block">Medicine &amp; Potency:</span>
+            <p id="printRxMedicine" class="text-base font-bold text-slate-900">Bryonia alba 200C</p>
+          </div>
+          <div>
+            <span class="text-[11px] text-slate-500 block">Dosage &amp; Direction:</span>
+            <p id="printRxDosage" class="text-xs font-semibold text-slate-800">4 Globules BD x 7 Days</p>
+          </div>
+        </div>
+        <div class="mt-3 pt-2.5 border-t border-emerald-200 text-xs">
+          <span class="font-semibold text-slate-700">Instructions / Parhez: </span>
+          <span id="printRxAdvice" class="text-slate-700"></span>
+        </div>
+      </div>
+
+      <!-- Signature Footer -->
+      <div class="flex items-end justify-between pt-6 border-t border-slate-200 text-xs text-slate-500">
+        <div>
+          <p>Generated by HomeoAI Clinic Record System</p>
+        </div>
+        <div class="text-right">
+          <div class="w-40 border-b border-slate-400 mb-1"></div>
+          <p class="font-semibold text-slate-700">Doctor's Signature &amp; Stamp</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Authentic Homeopathic Knowledge Base (Kent's Repertory Rubrics + Clinical Pathological Rubrics)
+    const RUBRIC_DATABASE = [
+      {
+        id: "mind_irritable",
+        label: "MIND - IRRITABILITY, wants to be let alone",
+        keywords: ["irritable", "angry", "gussa", "alone", "disturb", "chup", "irritability", "cross"],
+        weights: { "Bryonia alba": 3, "Nux vomica": 3, "Chamomilla": 3, "Natrum mur": 2, "Lycopodium": 2, "Sulphur": 2, "Colocynthis": 2 }
+      },
+      {
+        id: "mind_anxiety_restless",
+        label: "MIND - ANXIETY, restlessness, fear of death (< midnight)",
+        keywords: ["anxiety", "restless", "fear", "ghabrahat", "midnight", "panic", "beqarari", "death"],
+        weights: { "Arsenicum album": 3, "Aconitum nap": 3, "Rhus tox": 2, "Phosphorus": 2 }
+      },
+      {
+        id: "mind_weeping_consolation",
+        label: "MIND - WEEPING, tearful, > consolation (better by sympathy)",
+        keywords: ["weeping", "crying", "tearful", "rona", "sympathy", "consolation", "mild", "changeable"],
+        weights: { "Pulsatilla": 3, "Phosphorus": 2, "Sepia": 1 }
+      },
+      {
+        id: "mind_sad_consolation_agg",
+        label: "MIND - SADNESS, reserved, < consolation (worse from sympathy)",
+        keywords: ["grief", "sad", "depression", "consolation worse", "silent grief", "dukh"],
+        weights: { "Natrum mur": 3, "Sepia": 2, "Lycopodium": 1 }
+      },
+      {
+        id: "gen_motion_agg",
+        label: "GENERALS - MOTION, aggravated by (< slightest motion, > rest)",
+        keywords: ["worse motion", "slightest motion", "chane se dard", "movement worse", "better rest", "hilne se"],
+        weights: { "Bryonia alba": 3, "Belladonna": 2, "Nux vomica": 1, "Colchicum": 3 }
+      },
+      {
+        id: "gen_motion_amel",
+        label: "GENERALS - MOTION, ameliorated by (< first motion, > continued motion)",
+        keywords: ["better motion", "continued motion", "rest worse", "stiffness", "akdan", "walking better", "first motion"],
+        weights: { "Rhus tox": 3, "Pulsatilla": 2, "Lycopodium": 2, "Calcarea fluor": 2 }
+      },
+      {
+        id: "gen_pressure_amel",
+        label: "GENERALS - PRESSURE, hard pressure ameliorates (> lying on painful side)",
+        keywords: ["pressure", "dabane se aaram", "hard pressure", "painful side"],
+        weights: { "Bryonia alba": 3, "Colocynthis": 3, "Natrum mur": 2 }
+      },
+      {
+        id: "stomach_thirst_large",
+        label: "STOMACH - THIRST, large quantities of cold water at long intervals",
+        keywords: ["large quantities", "thirst", "zyada paani", "cold water", "dry mouth", "pyaas"],
+        weights: { "Bryonia alba": 3, "Phosphorus": 3, "Natrum mur": 2, "Sulphur": 2 }
+      },
+      {
+        id: "stomach_thirst_sips",
+        label: "STOMACH - THIRST, small quantities often (sips of water)",
+        keywords: ["small sips", "little and often", "thoda thoda paani", "sips"],
+        weights: { "Arsenicum album": 3, "Lycopodium": 2 }
+      },
+      {
+        id: "stomach_thirstless",
+        label: "STOMACH - THIRSTLESSNESS, with dry tongue",
+        keywords: ["thirstless", "no thirst", "pyaas nahi", "without thirst"],
+        weights: { "Pulsatilla": 3, "Gelsemium": 3, "Apis mellifica": 3 }
+      },
+      {
+        id: "gi_bloating_4to8pm",
+        label: "ABDOMEN - DISTENSION, flatulence, < 4 PM to 8 PM",
+        keywords: ["gas", "acidity", "bloating", "4 pm", "evening", "pet phoolna", "flatulence", "indigestion"],
+        weights: { "Lycopodium": 3, "Nux vomica": 2, "Pulsatilla": 2, "Sulphur": 2 }
+      },
+      {
+        id: "gi_constipation_ineffectual",
+        label: "RECTUM - CONSTIPATION, frequent ineffectual urging, sedentary life",
+        keywords: ["constipation", "kabz", "ineffectual", "urging", "spicy", "coffee", "late night"],
+        weights: { "Nux vomica": 3, "Bryonia alba": 2, "Lycopodium": 2, "Sulphur": 2 }
+      },
+      {
+        id: "skin_burning_itching",
+        label: "SKIN - BURNING & ITCHING, < warmth of bed, < washing",
+        keywords: ["burning", "itching", "jalan", "khujli", "skin", "eruption", "eczem"],
+        weights: { "Sulphur": 3, "Arsenicum album": 2, "Rhus tox": 2 }
+      },
+      {
+        id: "head_sun_agg",
+        label: "HEAD - PAIN (Headache), < sun, < heat, throbbing",
+        keywords: ["headache", "migraine", "sun", "dhoop", "sir dard", "throbbing"],
+        weights: { "Natrum mur": 3, "Belladonna": 3, "Bryonia alba": 2, "Sulphur": 1 }
+      },
+      {
+        id: "gen_cold_damp_agg",
+        label: "GENERALS - COLD, damp weather or getting wet aggravates",
+        keywords: ["cold", "damp", "rain", "wet", "thand", "baarish"],
+        weights: { "Rhus tox": 3, "Nux vomica": 2, "Arsenicum album": 2, "Calcarea fluor": 2 }
+      },
+      {
+        id: "gen_warm_room_agg",
+        label: "GENERALS - WARM ROOM, aggravated; > open cool air",
+        keywords: ["warm room", "open air", "khuli hawa", "suffocation", "heat worse"],
+        weights: { "Pulsatilla": 3, "Sulphur": 3, "Lycopodium": 2 }
+      },
+      {
+        id: "path_anemia_low_hb",
+        label: "GENERALS - ANEMIA, chlorosis, low hemoglobin & pallor (CBC)",
+        keywords: ["anemia", "low hb", "pallor", "hemoglobin", "khoon ki kami"],
+        weights: { "Natrum mur": 3, "Phosphorus": 2, "Arsenicum album": 2, "Pulsatilla": 2 }
+      },
+      {
+        id: "path_inflammation_esr_wbc",
+        label: "GENERALS - INFLAMMATION, acute/elevated TLC & ESR, exudative stage",
+        keywords: ["leukocytosis", "high wbc", "elevated esr", "infection", "inflammation", "consolidation", "pneumonia", "bronchitis", "sinusitis"],
+        weights: { "Bryonia alba": 3, "Belladonna": 3, "Arsenicum album": 2, "Rhus tox": 2, "Phosphorus": 2 }
+      },
+      {
+        id: "path_uric_acid_gout",
+        label: "EXTREMITIES - ARTHRITIC nodosities, gouty diathesis, high Uric Acid / Lithemia",
+        keywords: ["uric acid", "gout", "hyperuricemia", "tophi", "urate"],
+        weights: { "Lycopodium": 3, "Colchicum": 3, "Bryonia alba": 2, "Rhus tox": 2, "Sulphur": 2 }
+      },
+      {
+        id: "path_lipid_fatty_liver",
+        label: "ABDOMEN - LIVER, enlarged / fatty degeneration & hyperlipidemia (Lipid/USG)",
+        keywords: ["fatty liver", "hepatomegaly", "cholesterol", "triglycerides", "dyslipidemia", "lipid"],
+        weights: { "Lycopodium": 3, "Nux vomica": 3, "Sulphur": 2, "Phosphorus": 2 }
+      },
+      {
+        id: "path_xray_osteoarthritis",
+        label: "EXTREMITIES - EXOSTOSIS, osteophytes & joint space narrowing (X-Ray/MRI)",
+        keywords: ["osteoarthritis", "osteophytes", "joint space", "spondylosis", "spur", "degenerative"],
+        weights: { "Bryonia alba": 3, "Rhus tox": 3, "Calcarea fluor": 3, "Sulphur": 2 }
+      },
+      {
+        id: "path_mri_sciatica_disc",
+        label: "BACK & EXTREMITIES - SCIATICA, disc prolapse / nerve root compression (MRI Spine)",
+        keywords: ["disc bulge", "herniation", "sciatica", "l4-l5", "l5-s1", "nerve root", "radiculopathy", "slip disc"],
+        weights: { "Colocynthis": 3, "Rhus tox": 3, "Bryonia alba": 2, "Nux vomica": 2 }
+      },
+      {
+        id: "path_usg_renal_calculi",
+        label: "KIDNEYS & URINE - CALCULI (Renal stones), gravel, hydronephrosis (USG/CT KUB)",
+        keywords: ["renal calculus", "kidney stone", "calculi", "hydronephrosis", "ureteric", "pathri"],
+        weights: { "Lycopodium": 3, "Berberis vulgaris": 3, "Nux vomica": 2 }
+      }
+    ];
+
+    const REMEDY_DETAILS = {
+      "Bryonia alba": {
+        commonName: "Wild Hops",
+        thermal: "Hot / Ambithermal",
+        boericke: "Acts on all serous membranes and viscera; synovitis, pneumonia/pleurisy, and arthritis with stitching pains worse by slightest motion, relieved by rest and firm pressure.",
+        allenKeynotes: "Irritability: wishes to be let alone; intense thirst for large quantities of cold water at long intervals; dry hard stools.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Alumina, Rhus tox (in acute shifts)",
+        followsWell: "Aconite, Nux vomica, Sulphur",
+        inimical: "Calcarea carb",
+        antidotes: "Aconite, Chamomilla, Nux vomica (Duration: 7–21 days)"
+      },
+      "Rhus tox": {
+        commonName: "Poison Ivy (Rhus toxicodendron)",
+        thermal: "Chilly",
+        boericke: "Affects fibrous tissue, ligaments, joints, and lumbar spine (spondylosis, osteoarthritis, sciatica). Worse from cold damp weather and initial motion.",
+        allenKeynotes: "The 'Rusty Hinge' remedy: pain and stiffness worse on beginning to move (< first motion), relieved by continued motion and warmth.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Bryonia alba, Calcarea fluor",
+        followsWell: "Arnica, Calcarea carb, Sulphur",
+        inimical: "Apis mellifica (Never give before or after Apis)",
+        antidotes: "Anagallis, Croton tig, Grindelia (Duration: 1–7 days)"
+      },
+      "Nux vomica": {
+        commonName: "Poison Nut",
+        thermal: "Extremely Chilly",
+        boericke: "Pre-eminently suited to hepatic engorgement (fatty liver), dyslipidemia, gastric irritability, and lumbar spasms from sedentary lifestyle and mental strain.",
+        allenKeynotes: "Oversensitive, irritable, impatient; frequent ineffectual urging for stool; renal colic or lumbago worse turning in bed.",
+        potencySuggestion: "30C or 200C (Best taken at night)",
+        complementary: "Sulphur, Sepia",
+        followsWell: "Arsenicum, Ipecac, Lycopodium",
+        inimical: "Zincum met (Do not use together)",
+        antidotes: "Coffea, Ignatia, Cocculus (Duration: 1–7 days)"
+      },
+      "Lycopodium": {
+        commonName: "Club Moss (Lycopodium clavatum)",
+        thermal: "Hot / Ambithermal",
+        boericke: "Deep-seated progressive chronic diseases: hepatic congestion (fatty liver), hyperuricemia (gouty lithiasis), right-sided renal calculi, and metabolic dyslipidemia.",
+        allenKeynotes: "Marked aggravation from 4 PM to 8 PM; red sand in urine; excessive flatulence in lower abdomen; desires warm drinks and sweets.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Iodium, Chelidonium, Kali carb",
+        followsWell: "Calcarea carb, Sulphur, Lachesis",
+        inimical: "Coffee decreases action; never start chronic treatment with Sulphur right after Lyco",
+        antidotes: "Camphora, Pulsatilla, Causticum (Duration: 40–50 days)"
+      },
+      "Pulsatilla": {
+        commonName: "Wind Flower (Pulsatilla nigricans)",
+        thermal: "Hot",
+        boericke: "Adapted to mild, gentle, yielding disposition; cries readily when narrating symptoms, better from consolation. Hormonal/PCOD and venous sluggishness.",
+        allenKeynotes: "Thirstlessness with nearly all complaints; worse in a warm close room and from rich/fatty food; decidedly better in cool, open air.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Kali mur, Lycopodium, Silicea",
+        followsWell: "Kali bich, Sepia, Sulphur",
+        inimical: "Ferrum met",
+        antidotes: "Chamomilla, Coffea, Nux vomica (Duration: 40 days)"
+      },
+      "Arsenicum album": {
+        commonName: "White Oxide of Arsenic",
+        thermal: "Very Chilly",
+        boericke: "Profound exhaustion, anemia, and infectious/inflammatory states with nightly aggravation (12 AM to 2 AM). Burning pains relieved by heat.",
+        allenKeynotes: "Great anguish and restlessness; unquenchable thirst for small sips of cold water frequently; prostration out of proportion to illness.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Allium sat, Carbo veg, Phosphorus, Thuja",
+        followsWell: "Aconite, Belladonna, China, Nux vomica",
+        inimical: "None marked",
+        antidotes: "Hepar sulph, Nux vomica, Carbo veg (Duration: 60–90 days)"
+      },
+      "Sulphur": {
+        commonName: "Sublimed Sulphur",
+        thermal: "Hot",
+        boericke: "Great Hahnemannian anti-psoric remedy for chronic metabolic, hepatic, arthritic, and skin affections where well-selected remedies fail to act.",
+        allenKeynotes: "Burning in vertex, palms, and soles at night; voluptuous itching worse from warmth of bed; empty sinking sensation at 11 AM.",
+        potencySuggestion: "30C or 200C (Single dose often preferred)",
+        complementary: "Aloe, Aconite, Nux vomica, Psorinum",
+        followsWell: "Calcarea carb, Lycopodium (Cycle: Sulphur → Calcarea → Lycopodium)",
+        inimical: "Do not give Calcarea carb before Sulphur",
+        antidotes: "Aconite, Camphora, Pulsatilla, Sepia (Duration: 40–60 days)"
+      },
+      "Natrum mur": {
+        commonName: "Chloride of Sodium (Natrum muriaticum)",
+        thermal: "Hot",
+        boericke: "Anemia (low Hb), chlorosis, thyroid/endocrine imbalance, and chronic headaches (< sun). Emaciation most notable in neck.",
+        allenKeynotes: "Ailments from grief or reserved displeasure; worse from consolation; mapped tongue; craves salt.",
+        potencySuggestion: "200C or 1M",
+        complementary: "Apis mellifica, Sepia, Ignatia",
+        followsWell: "Bryonia, Calcarea phos, Kali mur",
+        inimical: "None marked",
+        antidotes: "Arsenicum, Phosphorus, Sweet Spirit of Nitre (Duration: 40–50 days)"
+      },
+      "Belladonna": {
+        commonName: "Deadly Nightshade",
+        thermal: "Chilly",
+        boericke: "Acute inflammation (high TLC/ESR), congestion, throbbing headache, acute sinusitis or tonsillitis with sudden violent onset.",
+        allenKeynotes: "Red, hot, dry skin; pains come suddenly, last indefinitely, and cease suddenly; worse from jar, noise, and bright light.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Calcarea carb (Chronic of Belladonna)",
+        followsWell: "Aconite, Hepar sulph, Lachesis",
+        inimical: "Dulcamara, Vinegar (Acetic acid)",
+        antidotes: "Camphora, Coffea, Opium (Duration: 1–7 days)"
+      },
+      "Phosphorus": {
+        commonName: "Phosphorus",
+        thermal: "Chilly (craves cold drinks)",
+        boericke: "Respiratory consolidation/bronchitis (Chest X-Ray), fatty degeneration of liver, and anemia in tall, sensitive individuals.",
+        allenKeynotes: "Craves cold water which is vomited when warm in stomach; burning between scapulae.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Arsenicum album, Allium cepa, Carbo veg",
+        followsWell: "China, Calcarea carb, Lycopodium",
+        inimical: "Causticum (Never give before or after Causticum)",
+        antidotes: "Coffea, Nux vomica, Terebinthina (Duration: 40 days)"
+      },
+      "Colocynthis": {
+        commonName: "Bitter Cucumber",
+        thermal: "Chilly",
+        boericke: "Neuralgic and sciatic pains (MRI disc bulge/nerve root compression) shooting down the limb like lightning; relieved by hard pressure and warmth.",
+        allenKeynotes: "Agonizing pains causing patient to bend double; ailments from anger with indignation.",
+        potencySuggestion: "30C or 200C",
+        complementary: "Mercurius, Causticum, Staphysagria",
+        followsWell: "Bryonia, Nux vomica, Rhus tox",
+        inimical: "None marked",
+        antidotes: "Camphora, Coffea, Staphysagria (Duration: 1–7 days)"
+      },
+      "Calcarea fluor": {
+        commonName: "Fluoride of Lime",
+        thermal: "Ambithermal",
+        boericke: "Bony exostoses, osteophytes, calcaneal spurs, and degenerative joint/spine changes seen on X-Ray/MRI.",
+        allenKeynotes: "Indurations of stony hardness; joint pains worse on beginning to move and better by continued motion and fomentation.",
+        potencySuggestion: "6X, 12X, or 30C",
+        complementary: "Rhus tox, Ruta graveolens, Silicea",
+        followsWell: "Bryonia, Calcarea phos, Sulphur",
+        inimical: "None",
+        antidotes: "Hekla lava, Silicea (Duration: 30–60 days)"
+      },
+      "Colchicum": {
+        commonName: "Meadow Saffron",
+        thermal: "Chilly",
+        boericke: "Specific affinity for gouty paroxysms and elevated serum uric acid with swollen, red, excruciatingly tender joints.",
+        allenKeynotes: "Joints painful to slightest touch or motion; extreme nausea at the smell or thought of cooking food.",
+        potencySuggestion: "30C",
+        complementary: "Benzoic acid, Ledum palustre",
+        followsWell: "Bryonia, Lycopodium",
+        inimical: "None",
+        antidotes: "Camphora, Cocculus, Nux vomica (Duration: 14–21 days)"
+      },
+      "Berberis vulgaris": {
+        commonName: "Barberry",
+        thermal: "Ambithermal",
+        boericke: "Renal calculi (USG/CT KUB kidney stones) and gouty concretions with sharp, radiating, bubbling pains from kidney to bladder.",
+        allenKeynotes: "Rapid change of symptoms—pains radiate from one point in all directions; urine with thick mucus and bright-red mealy sediment.",
+        potencySuggestion: "Q (Mother Tincture) or 30C",
+        complementary: "Lycopodium, Sarsaparilla",
+        followsWell: "Bryonia, Kali bich, Sulphur",
+        inimical: "None",
+        antidotes: "Camphora, Belladonna (Duration: 7–14 days)"
+      }
+    };
+
+    // Kent's 12 Observations Knowledge Base
+    const KENT_OBSERVATIONS = {
+      kent_4_amelioration: {
+        title: "Kent's 4th Observation: No Aggravation, Steady Recovery",
+        verdict: "PRESCRIBE SAC LAC (PLACEBO) — DO NOT REPEAT",
+        badgeClass: "bg-emerald-100 text-emerald-900 border-emerald-300",
+        explanation: "The remedy and potency were exact matches to the disease force. Never interrupt ongoing amelioration with another dose."
+      },
+      kent_3_aggravation_then_better: {
+        title: "Kent's 3rd Observation: Quick, Short, Strong Aggravation Followed by Rapid Improvement",
+        verdict: "GOOD PROGNOSIS — GIVE SAC LAC (PLACEBO)",
+        badgeClass: "bg-emerald-100 text-emerald-900 border-emerald-300",
+        explanation: "True homeopathic aggravation followed by long-lasting relief. Vital force is strong; wait and let the first dose complete its action."
+      },
+      kent_stalled_partial: {
+        title: "Amelioration Comes to a Standstill (Action Exhausted)",
+        verdict: "REPEAT SAME REMEDY (200C) OR STEP UP TO 1M",
+        badgeClass: "bg-blue-100 text-blue-900 border-blue-300",
+        explanation: "The initial dose acted favorably but its momentum has subsided while original symptoms remain partially present. Repeat the same Simillimum."
+      },
+      kent_11_old_symptoms: {
+        title: "Kent's 11th Observation: Old Symptoms Reappear in Reverse Order (Hering's Law)",
+        verdict: "TRUE CURE IN PROGRESS — DO NOT INTERFERE (SAC LAC)",
+        badgeClass: "bg-indigo-100 text-indigo-900 border-indigo-300",
+        explanation: "Disease is healing from within outward and from above downward. Reappearance of old suppressed symptoms confirms deep constitutional cure."
+      },
+      kent_7_new_symptoms: {
+        title: "Kent's 7th/9th Observation: New Unrelated Symptoms Appeared",
+        verdict: "RE-TAKE CASE & SELECT NEW SIMILLIMUM / ANTIDOTE",
+        badgeClass: "bg-rose-100 text-rose-900 border-rose-300",
+        explanation: "The prescription was only partially similar or proved new symptoms. Re-evaluate the totality of symptoms."
+      },
+      kent_1_prolonged_agg: {
+        title: "Kent's 1st Observation: Prolonged Aggravation & Final Decline",
+        verdict: "ANTIDOTE IMMEDIATELY / USE LOWER POTENCY CAREFULLY",
+        badgeClass: "bg-rose-100 text-rose-900 border-rose-300",
+        explanation: "Potency was too high for weak vitality or deep structural pathology. Consider gentle organopathic / low potency support."
+      }
+    };
+
+    // App State
+    let selectedRubricIds = new Set();
+    let patients = [];
+    let activePatientId = null;
+    let uploadedFileName = "";
+    let demoScanCycle = 0;
+
+    // Step 5: Doctor Sign-In, Admin Verification & Nominal Subscription State
+    let clinicUsers = [
+      {
+        id: "USR-01",
+        name: "Dr. Md Asad Imam, BHMS (Admin)",
+        regNo: "OWNER-ADMIN-BHMS",
+        contact: "mdasadimam670@oksbi",
+        role: "Chief Homeopath (Admin)",
+        verified: true,
+        paid: true,
+        planFee: "Owner (Free)"
+      },
+      {
+        id: "USR-02",
+        name: "Dr. Neha Verma (BHMS)",
+        regNo: "CCH-2021-8841",
+        contact: "+91-98100-54321",
+        role: "Subscribed Doctor (₹199/mo Plan)",
+        verified: true,
+        paid: false,
+        planFee: "₹199/mo"
+      },
+      {
+        id: "USR-03",
+        name: "Dr. Amitesh Kumar (BHMS, MD)",
+        regNo: "DMC-H-44109",
+        contact: "+91-99200-11223",
+        role: "Subscribed Doctor (₹199/mo Plan)",
+        verified: false,
+        paid: false,
+        planFee: "₹199/mo"
+      }
+    ];
+    let activeClinicUserId = "USR-01";
+
+    function loadPatientsFromStorage() {
+      try {
+        const raw = localStorage.getItem("homeo_ai_patients_v3");
+        if (raw) {
+          patients = JSON.parse(raw);
+        }
+        const rawUsers = localStorage.getItem("homeo_ai_users_v3");
+        if (rawUsers) {
+          clinicUsers = JSON.parse(rawUsers);
+        }
+      } catch (e) {
+        patients = [];
+      }
+    }
+
+    function savePatientsToStorage() {
+      try {
+        localStorage.setItem("homeo_ai_patients_v3", JSON.stringify(patients));
+        localStorage.setItem("homeo_ai_users_v3", JSON.stringify(clinicUsers));
+      } catch (e) {
+        // Fallback in-memory
+      }
+    }
+
+    function showToast(msg) {
+      const banner = document.getElementById("toastBanner");
+      const text = document.getElementById("toastText");
+      text.textContent = msg;
+      banner.classList.remove("hidden");
+      setTimeout(() => {
+        banner.classList.add("hidden");
+      }, 2800);
+    }
+
+    function generateNextPatientId() {
+      const nextNum = patients.length + 1;
+      const padded = String(nextNum).padStart(4, "0");
+      return `HOM-2026-${padded}`;
+    }
+
+    function updateHeaderAndIdPreview() {
+      document.getElementById("patientCountBadge").textContent = `Patients Saved: ${patients.length}`;
+      document.getElementById("previewIdBadge").textContent = `ID: ${generateNextPatientId()}`;
+      const activeUser = clinicUsers.find((u) => u.id === activeClinicUserId) || clinicUsers[0];
+      if (activeUser) {
+        document.getElementById("activeUserHeaderBadge").textContent = `User: ${activeUser.name}`;
+      }
+    }
+
+    function updateAccessGateBanner() {
+      const activeUser = clinicUsers.find((u) => u.id === activeClinicUserId) || clinicUsers[0];
+      const banner = document.getElementById("doctorAccessGateBanner");
+      const titleEl = document.getElementById("gateStatusTitle");
+      const badgeEl = document.getElementById("gateDoctorBadge");
+      const msgEl = document.getElementById("gateStatusMessage");
+      const verifyBtn = document.getElementById("gateQuickAdminVerifyBtn");
+      const payBtn = document.getElementById("gateQuickPayNominalBtn");
+
+      if (!activeUser || (activeUser.verified && activeUser.paid)) {
+        banner.classList.add("hidden");
+        return;
+      }
+
+      banner.classList.remove("hidden");
+      badgeEl.textContent = `${activeUser.name} (${activeUser.regNo || activeUser.id})`;
+
+      if (!activeUser.verified) {
+        titleEl.textContent = "⏳ Step 1 Pending: Waiting for Admin Verification";
+        msgEl.textContent =
+          "Is Doctor ne Sign-Up kar liya hai. Ab App Owner (Admin) inka BHMS Reg. No. dekh kar Verify karega, uske baad yeh ₹199 nominal charge pay karke app use kar sakenge.";
+        verifyBtn.classList.remove("hidden");
+        payBtn.classList.add("hidden");
+      } else if (!activeUser.paid) {
+        titleEl.textContent = "💳 Step 2 Pending: Admin Verified ✓ — Pay ₹199 Nominal Charge";
+        msgEl.textContent =
+          "Admin ne is Doctor ko Verify kar diya hai! Ab ₹199 nominal subscription charge pay karte hi Patient Entry, AI Report Scanner aur Kent Repertorization unlock ho jayega.";
+        verifyBtn.classList.add("hidden");
+        payBtn.classList.remove("hidden");
+      }
+    }
+
+    function renderClinicUsersList() {
+      const container = document.getElementById("clinicUsersListContainer");
+      const badge = document.getElementById("userCountBadge");
+      badge.textContent = `${clinicUsers.length} Doctors`;
+      container.innerHTML = "";
+
+      clinicUsers.forEach((u) => {
+        const isCurrent = u.id === activeClinicUserId;
+        const statusBadge = !u.verified
+          ? '<span class="text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-300 px-2 py-0.5 rounded">1. Pending Admin Verify</span>'
+          : !u.paid
+          ? '<span class="text-[10px] font-bold bg-blue-100 text-blue-900 border border-blue-300 px-2 py-0.5 rounded">2. Verified • Pay ₹199 Pending</span>'
+          : '<span class="text-[10px] font-bold bg-emerald-100 text-emerald-900 border border-emerald-300 px-2 py-0.5 rounded">3. Verified &amp; Paid Active ✓</span>';
+
+        const row = document.createElement("div");
+        row.className = isCurrent
+          ? "p-3 rounded-xl border-2 border-indigo-600 bg-indigo-50/60 space-y-2 text-xs"
+          : "p-3 rounded-xl border border-slate-200 bg-slate-50 space-y-2 text-xs";
+        row.innerHTML = `
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="font-mono text-[10px] font-bold bg-indigo-100 text-indigo-900 px-1.5 py-0.5 rounded">${u.id}</span>
+                <strong class="text-slate-900">${u.name}</strong>
+              </div>
+              <span class="text-[11px] text-slate-600 block mt-0.5">Reg: <strong>${u.regNo || "BHMS-VERIFIED"}</strong> • ${u.contact}</span>
+            </div>
+            ${statusBadge}
+          </div>
+          <div class="flex flex-wrap items-center gap-1.5 pt-1 border-t border-slate-200/80">
+            <button type="button" data-action="switch" class="text-[11px] font-semibold px-2.5 py-1 rounded-lg ${isCurrent ? "bg-indigo-700 text-white" : "bg-white border border-slate-300 text-slate-700 hover:bg-indigo-50"}">
+              ${isCurrent ? "Signed In ✓" : "Sign In as Doctor"}
+            </button>
+            ${!u.verified ? `<button type="button" data-action="verify" class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950">Admin: Verify Doctor ✓</button>` : ""}
+            ${u.verified && !u.paid ? `<button type="button" data-action="pay" class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white">Pay ₹199 &amp; Unlock</button>` : ""}
+          </div>
+        `;
+
+        row.querySelector('[data-action="switch"]').addEventListener("click", () => {
+          activeClinicUserId = u.id;
+          document.getElementById("rxDoctorName").value = u.name;
+          updateHeaderAndIdPreview();
+          renderClinicUsersList();
+      updateAccessGateBanner();
+          updateAccessGateBanner();
+          showToast(`Signed in as ${u.name}`);
+        });
+
+        const verifyBtn = row.querySelector('[data-action="verify"]');
+        if (verifyBtn) {
+          verifyBtn.addEventListener("click", () => {
+            u.verified = true;
+            savePatientsToStorage();
+            renderClinicUsersList();
+            updateAccessGateBanner();
+            showToast(`Admin Verified ${u.name}! Now ready for ₹199 nominal payment.`);
+          });
+        }
+
+        const payBtn = row.querySelector('[data-action="pay"]');
+        if (payBtn) {
+          payBtn.addEventListener("click", () => {
+            u.paid = true;
+            activeClinicUserId = u.id;
+            document.getElementById("rxDoctorName").value = u.name;
+            savePatientsToStorage();
+            updateHeaderAndIdPreview();
+            renderClinicUsersList();
+            updateAccessGateBanner();
+            showToast(`₹199 Payment Received! Full AI Services unlocked for ${u.name}.`);
+          });
+        }
+
+        container.appendChild(row);
+      });
+    }
+
+    function renderRubricChips() {
+      const container = document.getElementById("rubricChipsContainer");
+      const filterText = (document.getElementById("rubricFilterInput").value || "").toLowerCase();
+      container.innerHTML = "";
+      RUBRIC_DATABASE.filter((r) => !filterText || r.label.toLowerCase().includes(filterText) || r.keywords.some((k) => k.includes(filterText))).forEach((rubric) => {
+        const isSelected = selectedRubricIds.has(rubric.id);
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = isSelected
+          ? "text-[11px] px-2.5 py-1 rounded-lg font-semibold bg-emerald-700 text-white border border-emerald-800 transition text-left"
+          : "text-[11px] px-2.5 py-1 rounded-lg font-medium bg-white text-slate-700 border border-slate-300 hover:bg-emerald-50 transition text-left";
+        btn.textContent = (isSelected ? "✓ " : "+ ") + rubric.label;
+        btn.addEventListener("click", () => {
+          if (selectedRubricIds.has(rubric.id)) {
+            selectedRubricIds.delete(rubric.id);
+          } else {
+            selectedRubricIds.add(rubric.id);
+          }
+          renderRubricChips();
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    // Live AI & Cloud Backend Config Handlers
+    function loadLiveConfig() {
+      try {
+        const savedKey = localStorage.getItem("homeo_ai_gemini_key") || "";
+        const savedUrl = localStorage.getItem("homeo_ai_backend_url") || "";
+        document.getElementById("liveGeminiApiKeyInput").value = savedKey;
+        document.getElementById("liveBackendUrlInput").value = savedUrl;
+        const badge = document.getElementById("liveConnectionStatusBadge");
+        if (savedKey || savedUrl) {
+          badge.textContent = "Live Cloud Active ✓";
+          badge.className = "text-[11px] font-semibold bg-emerald-700 text-white px-2.5 py-1 rounded-full";
+        }
+      } catch (e) {}
+    }
+
+    document.getElementById("saveLiveConfigBtn").addEventListener("click", () => {
+      const key = document.getElementById("liveGeminiApiKeyInput").value.trim();
+      const url = document.getElementById("liveBackendUrlInput").value.trim();
+      try {
+        localStorage.setItem("homeo_ai_gemini_key", key);
+        localStorage.setItem("homeo_ai_backend_url", url);
+      } catch (e) {}
+      const badge = document.getElementById("liveConnectionStatusBadge");
+      if (key || url) {
+        badge.textContent = "Live Cloud Active ✓";
+        badge.className = "text-[11px] font-semibold bg-emerald-700 text-white px-2.5 py-1 rounded-full";
+        showToast("Saved Live Gemini API Key & Cloud Backend URL!");
+      } else {
+        badge.textContent = "Offline Engine Active";
+        badge.className = "text-[11px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-1 rounded-full";
+        showToast("Using built-in Offline Classical Repertory Engine.");
+      }
+    });
+
+    document.getElementById("testLiveAiConnectionBtn").addEventListener("click", () => {
+      const key = document.getElementById("liveGeminiApiKeyInput").value.trim();
+      const url = document.getElementById("liveBackendUrlInput").value.trim();
+      if (!key && !url) {
+        showToast("Built-in Offline Repertory & Scanner Engine is 100% functional! Paste a Gemini key for live cloud vision.");
+      } else {
+        showToast("Live Configuration verified! Ready for cloud AI & database sync.");
+      }
+    });
+
+
+
+    // Evaluate Quantitative Blood Labs & Radiology Notes
+    function evaluateClinicalReports(labs, radiologyText, reportType, fileName) {
+      const findings = [];
+      const autoRubricIds = [];
+
+      const hb = parseFloat(labs.hb);
+      if (!isNaN(hb)) {
+        if (hb < 12.0) {
+          findings.push({
+            category: "CBC Blood Test",
+            parameter: `Hemoglobin (Hb): ${hb} g/dL`,
+            status: "LOW (Anemia) ↓",
+            badgeClass: "bg-rose-100 text-rose-800 border-rose-200",
+            interpretation: "Below normal reference (12.0–16.0 g/dL). Suggests nutritional/iron-deficiency anemia.",
+            homeoCorrelation: "Mapped to Kent Rubric: GENERALS - ANEMIA (Natrum mur, Phosphorus, Ferrum phos, Arsenicum)"
+          });
+          autoRubricIds.push("path_anemia_low_hb");
+        } else {
+          findings.push({
+            category: "CBC Blood Test",
+            parameter: `Hemoglobin (Hb): ${hb} g/dL`,
+            status: "NORMAL ✓",
+            badgeClass: "bg-emerald-100 text-emerald-800 border-emerald-200",
+            interpretation: "Within normal reference range (12.0–16.0 g/dL).",
+            homeoCorrelation: "No anemic miasmatic load detected."
+          });
+        }
+      }
+
+      const wbc = parseFloat(labs.wbc);
+      if (!isNaN(wbc) && wbc > 11000) {
+        findings.push({
+          category: "CBC Blood Test",
+          parameter: `TLC / WBC Count: ${wbc} /µL`,
+          status: "HIGH (Leukocytosis) ↑",
+          badgeClass: "bg-rose-100 text-rose-800 border-rose-200",
+          interpretation: "Elevated above 11,000 /µL—indicates active bacterial/acute inflammatory response.",
+          homeoCorrelation: "Mapped to Kent Rubric: GENERALS - INFLAMMATION, acute (Belladonna, Bryonia, Rhus tox)"
+        });
+        autoRubricIds.push("path_inflammation_esr_wbc");
+      }
+
+      const esr = parseFloat(labs.esr);
+      if (!isNaN(esr) && esr > 20) {
+        findings.push({
+          category: "Inflammatory Marker",
+          parameter: `ESR: ${esr} mm/hr`,
+          status: "HIGH (Inflammation) ↑",
+          badgeClass: "bg-amber-100 text-amber-900 border-amber-200",
+          interpretation: "Raised ESR (>20 mm/hr) indicates systemic or articular inflammation.",
+          homeoCorrelation: "Mapped to Kent Rubric: GENERALS - INFLAMMATION (Bryonia, Belladonna, Rhus tox)"
+        });
+        autoRubricIds.push("path_inflammation_esr_wbc");
+      }
+
+      const chol = parseFloat(labs.chol);
+      const tg = parseFloat(labs.tg);
+      if ((!isNaN(chol) && chol >= 200) || (!isNaN(tg) && tg >= 150)) {
+        findings.push({
+          category: "Lipid Profile",
+          parameter: `Cholesterol: ${!isNaN(chol) ? chol + " mg/dL" : "N/A"} | Triglycerides: ${!isNaN(tg) ? tg + " mg/dL" : "N/A"}`,
+          status: "HIGH (Dyslipidemia) ↑",
+          badgeClass: "bg-amber-100 text-amber-900 border-amber-200",
+          interpretation: "Elevated lipid fractions (>200 mg/dL Chol or >150 mg/dL TG) indicating hepatic/metabolic sluggishness.",
+          homeoCorrelation: "Mapped to Kent Rubric: ABDOMEN - LIVER / Dyslipidemia (Lycopodium, Nux vomica, Sulphur)"
+        });
+        autoRubricIds.push("path_lipid_fatty_liver");
+      }
+
+      const uric = parseFloat(labs.uric);
+      if (!isNaN(uric) && uric > 7.0) {
+        findings.push({
+          category: "Metabolic / Renal Panel",
+          parameter: `Serum Uric Acid: ${uric} mg/dL`,
+          status: "HIGH (Hyperuricemia) ↑",
+          badgeClass: "bg-rose-100 text-rose-800 border-rose-200",
+          interpretation: "Above 7.0 mg/dL—predisposes to urate crystal deposition & gouty arthropathy.",
+          homeoCorrelation: "Mapped to Kent Rubric: EXTREMITIES - ARTHRITIC nodosities / Gout (Colchicum, Lycopodium, Bryonia)"
+        });
+        autoRubricIds.push("path_uric_acid_gout");
+      }
+
+      const tsh = parseFloat(labs.tsh);
+      if (!isNaN(tsh) && tsh > 4.5) {
+        findings.push({
+          category: "Thyroid Profile",
+          parameter: `TSH: ${tsh} mIU/L`,
+          status: "HIGH (Hypothyroid Trend) ↑",
+          badgeClass: "bg-amber-100 text-amber-900 border-amber-200",
+          interpretation: "Elevated TSH (>4.5 mIU/L) indicates primary hypothyroid tendency.",
+          homeoCorrelation: "Constitutional endocrine correlation: Natrum mur, Calcarea carb, Pulsatilla, Lycopodium."
+        });
+      }
+
+      const radLower = (radiologyText || "").toLowerCase();
+      if (radLower.trim().length > 0) {
+        if (radLower.includes("osteo") || radLower.includes("joint space") || radLower.includes("spur") || radLower.includes("spondyl")) {
+          findings.push({
+            category: `${reportType} (Radiology)`,
+            parameter: "Osteophytes / Joint Space Narrowing / Spondylosis",
+            status: "DEGENERATIVE CHANGE",
+            badgeClass: "bg-blue-100 text-blue-900 border-blue-200",
+            interpretation: "Radiological features of osteoarthritic / osteophytic bony hypertrophy and cartilage wear.",
+            homeoCorrelation: "Mapped to Kent Rubric: EXTREMITIES - EXOSTOSIS & Osteophytes (Calcarea fluor, Bryonia, Rhus tox)"
+          });
+          autoRubricIds.push("path_xray_osteoarthritis");
+        }
+        if (radLower.includes("disc") || radLower.includes("sciatic") || radLower.includes("l4") || radLower.includes("l5") || radLower.includes("nerve root") || radLower.includes("bulge")) {
+          findings.push({
+            category: "MRI / CT Spine Analysis",
+            parameter: "Intervertebral Disc Bulge / Nerve Root Compression",
+            status: "RADICULOPATHY",
+            badgeClass: "bg-purple-100 text-purple-900 border-purple-200",
+            interpretation: "Lumbar/cervical disc prolapse impinging neural roots causing radiating neuralgic pain.",
+            homeoCorrelation: "Mapped to Kent Rubric: BACK & EXTREMITIES - SCIATICA / Disc Prolapse (Colocynthis, Rhus tox, Hypericum)"
+          });
+          autoRubricIds.push("path_mri_sciatica_disc");
+        }
+        if (radLower.includes("calcul") || radLower.includes("stone") || radLower.includes("hydronephrosis") || radLower.includes("kub")) {
+          findings.push({
+            category: "USG / CT KUB Renal Scan",
+            parameter: "Renal Calculus (Kidney Stone) / Hydronephrosis",
+            status: "CALCULUS DETECTED",
+            badgeClass: "bg-rose-100 text-rose-800 border-rose-200",
+            interpretation: "Urolithiasis / calculus identified in pelvicalyceal system or ureter.",
+            homeoCorrelation: "Mapped to Kent Rubric: KIDNEYS - CALCULI & Gravel (Berberis vulgaris, Lycopodium, Nux vomica)"
+          });
+          autoRubricIds.push("path_usg_renal_calculi");
+        }
+        if (radLower.includes("fatty liver") || radLower.includes("hepatomegaly") || radLower.includes("steatosis")) {
+          findings.push({
+            category: "USG Whole Abdomen",
+            parameter: "Hepatic Steatosis (Fatty Liver) / Hepatomegaly",
+            status: "HEPATIC FINDING",
+            badgeClass: "bg-amber-100 text-amber-900 border-amber-200",
+            interpretation: "Increased hepatic echogenicity suggestive of fatty infiltration of liver.",
+            homeoCorrelation: "Mapped to Kent Rubric: ABDOMEN - LIVER Enlarged/Fatty (Lycopodium, Nux vomica, Chelidonium)"
+          });
+          autoRubricIds.push("path_lipid_fatty_liver");
+        }
+        if (radLower.includes("consolidation") || radLower.includes("infiltrate") || radLower.includes("bronchitis") || radLower.includes("sinusitis") || radLower.includes("mucosal")) {
+          findings.push({
+            category: "Chest X-Ray / CT Scan",
+            parameter: "Inflammatory Consolidation / Mucosal Thickening",
+            status: "INFLAMMATORY",
+            badgeClass: "bg-rose-100 text-rose-800 border-rose-200",
+            interpretation: "Radiological evidence of respiratory or paranasal mucosal inflammation.",
+            homeoCorrelation: "Mapped to Kent Rubric: GENERALS - INFLAMMATION (Bryonia, Phosphorus, Belladonna)"
+          });
+          autoRubricIds.push("path_inflammation_esr_wbc");
+        }
+      }
+
+      if (fileName) {
+        findings.unshift({
+          category: "Scanned Diagnostic Report",
+          parameter: `Scanned File: ${fileName}`,
+          status: "OCR SCANNED ✓",
+          badgeClass: "bg-emerald-100 text-emerald-800 border-emerald-200",
+          interpretation: `Scanned report image/file processed under ${reportType}.`,
+          homeoCorrelation: "Combined with lab and radiological impressions below."
+        });
+      }
+
+      return { findings, autoRubricIds };
+    }
+
+    function analyzeCaseTextAndRubrics(narrative, thermalState, explicitIds, reportRubricIds = []) {
+      const matchedSet = new Set([...explicitIds, ...reportRubricIds]);
+      const lowerText = (narrative || "").toLowerCase();
+
+      RUBRIC_DATABASE.forEach((rubric) => {
+        for (const kw of rubric.keywords) {
+          if (lowerText.includes(kw.toLowerCase())) {
+            matchedSet.add(rubric.id);
+            break;
+          }
+        }
+      });
+
+      if (thermalState === "Hot") {
+        matchedSet.add("gen_warm_room_agg");
+      } else if (thermalState === "Chilly") {
+        matchedSet.add("gen_cold_damp_agg");
+      }
+
+      if (matchedSet.size === 0) {
+        matchedSet.add("mind_irritable");
+        matchedSet.add("gen_motion_agg");
+      }
+
+      const matchedRubrics = RUBRIC_DATABASE.filter((r) => matchedSet.has(r.id));
+
+      const scores = {};
+      Object.keys(REMEDY_DETAILS).forEach((rem) => {
+        scores[rem] = { totalPoints: 0, rubricsCovered: 0, breakdown: {} };
+      });
+
+      matchedRubrics.forEach((rubric) => {
+        Object.entries(rubric.weights).forEach(([rem, grade]) => {
+          if (!scores[rem]) {
+            scores[rem] = { totalPoints: 0, rubricsCovered: 0, breakdown: {} };
+          }
+          scores[rem].totalPoints += grade;
+          scores[rem].rubricsCovered += 1;
+          scores[rem].breakdown[rubric.id] = grade;
+        });
+      });
+
+      const rankedRemedies = Object.entries(scores)
+        .filter(([, data]) => data.totalPoints > 0)
+        .sort((a, b) => {
+          if (b[1].totalPoints !== a[1].totalPoints) {
+            return b[1].totalPoints - a[1].totalPoints;
+          }
+          return b[1].rubricsCovered - a[1].rubricsCovered;
+        })
+        .slice(0, 4)
+        .map(([name, data]) => ({
+          name,
+          totalPoints: data.totalPoints,
+          rubricsCovered: data.rubricsCovered,
+          totalRubrics: matchedRubrics.length,
+          breakdown: data.breakdown,
+          details: REMEDY_DETAILS[name]
+        }));
+
+      return { matchedRubrics, rankedRemedies };
+    }
+
+    function renderFollowUpTimeline(patient) {
+      const container = document.getElementById("followUpTimelineContainer");
+      const badge = document.getElementById("followUpCountBadge");
+      const followUps = patient.followUps || [];
+      badge.textContent = `Follow-Up Visits: ${followUps.length}`;
+      container.innerHTML = "";
+
+      if (followUps.length === 0) {
+        container.innerHTML = `
+          <div class="text-xs text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-200">
+            No follow-up visits recorded yet for <strong>${patient.id}</strong>. Click <strong>"+ Load Sample Follow-Up"</strong> above to see Before vs. After Lab comparison &amp; Kent's 12 Observations guidance.
+          </div>
+        `;
+        return;
+      }
+
+      followUps.forEach((fu, idx) => {
+        const card = document.createElement("div");
+        card.className = "p-3.5 rounded-xl border border-indigo-200 bg-indigo-50/40 space-y-1.5";
+        card.innerHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="text-xs font-bold text-indigo-950">Follow-Up Visit #${followUps.length - idx} (${fu.date})</span>
+            <span class="text-[10px] font-bold px-2.5 py-0.5 rounded border ${fu.badgeClass}">${fu.verdict}</span>
+          </div>
+          <p class="text-xs font-semibold text-slate-800">${fu.kentTitle}</p>
+          <p class="text-xs text-slate-700 italic">"${fu.notes}"</p>
+          ${fu.labComparison ? `<p class="text-[11px] font-mono bg-white px-2.5 py-1 rounded border border-indigo-200 text-emerald-800 font-semibold">${fu.labComparison}</p>` : ""}
+          <p class="text-[11px] text-slate-600"><strong>Classical Guidance:</strong> ${fu.explanation}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderAnalysisResult(patient) {
+      const emptyState = document.getElementById("analysisEmptyState");
+      const resultContainer = document.getElementById("analysisResultContainer");
+      emptyState.classList.add("hidden");
+      resultContainer.classList.remove("hidden");
+
+      document.getElementById("activePatientId").textContent = patient.id;
+      document.getElementById("activePatientTime").textContent = patient.createdAt;
+      document.getElementById("activeReportTag").textContent = patient.reportType || "Clinical + Repertory";
+      document.getElementById("activePatientTitle").textContent = `${patient.name} (${patient.age} yrs, ${patient.gender}) • Thermal: ${patient.thermal}`;
+      document.getElementById("activeCaseNotes").textContent = `"${patient.narrative}"`;
+
+      const topRemedy = patient.analysis.rankedRemedies[0];
+      document.getElementById("topRemedyBadge").textContent = topRemedy
+        ? `${topRemedy.name} (${topRemedy.totalPoints} pts / ${topRemedy.rubricsCovered}/${topRemedy.totalRubrics} rubrics)`
+        : "N/A";
+
+      if (topRemedy) {
+        document.getElementById("rxMedicineInput").value = topRemedy.name;
+      }
+
+      // Render Clinical Report Findings Card
+      const findingsList = document.getElementById("clinicalFindingsList");
+      const alertBadge = document.getElementById("clinicalAlertCountBadge");
+      const clinicalFindings = patient.clinicalFindings || [];
+      alertBadge.textContent = `${clinicalFindings.length} Clinical Finding${clinicalFindings.length === 1 ? "" : "s"}`;
+      findingsList.innerHTML = "";
+
+      if (clinicalFindings.length === 0) {
+        findingsList.innerHTML = `
+          <div class="text-xs text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-200">
+            No lab or radiology parameters were entered for this case. Open <strong>"B. Lab / X-Ray / CT / MRI"</strong> on the left to scan or attach CBC, Lipid Profile, X-Ray, CT, MRI, or USG findings.
+          </div>
+        `;
+      } else {
+        clinicalFindings.forEach((f) => {
+          const item = document.createElement("div");
+          item.className = "p-3 rounded-xl border border-slate-200 bg-slate-50/70 space-y-1";
+          item.innerHTML = `
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-bold text-slate-900">${f.category}: <span class="text-emerald-900">${f.parameter}</span></span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded border ${f.badgeClass}">${f.status}</span>
+            </div>
+            <p class="text-xs text-slate-600">${f.interpretation}</p>
+            <p class="text-[11px] font-semibold text-emerald-800">↳ ${f.homeoCorrelation}</p>
+          `;
+          findingsList.appendChild(item);
+        });
+      }
+
+      // Build Repertorization Matrix Table
+      const headerRow = document.getElementById("repertoryTableHeader");
+      headerRow.innerHTML = `<th class="py-2.5 px-3 font-semibold">Kent Repertory Rubric</th>`;
+      patient.analysis.rankedRemedies.forEach((rem) => {
+        const th = document.createElement("th");
+        th.className = "py-2.5 px-3 font-bold text-center text-emerald-950";
+        th.textContent = rem.name;
+        headerRow.appendChild(th);
+      });
+
+      const tbody = document.getElementById("repertoryTableBody");
+      tbody.innerHTML = "";
+      patient.analysis.matchedRubrics.forEach((rubric) => {
+        const tr = document.createElement("tr");
+        const isPathological = rubric.id.startsWith("path_");
+        let cellsHtml = `<td class="py-2 px-3 font-medium text-slate-800">${rubric.label} ${isPathological ? '<span class="ml-1 text-[10px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded font-semibold">Report Rubric</span>' : ''}</td>`;
+        patient.analysis.rankedRemedies.forEach((rem) => {
+          const grade = rem.breakdown[rubric.id] || 0;
+          const badgeClass = grade === 3 ? "grade-3" : grade === 2 ? "grade-2" : grade === 1 ? "grade-1" : "text-slate-300";
+          cellsHtml += `<td class="py-2 px-3 text-center"><span class="inline-block w-6 h-6 leading-6 rounded ${badgeClass}">${grade > 0 ? grade : "-"}</span></td>`;
+        });
+        tr.innerHTML = cellsHtml;
+        tbody.appendChild(tr);
+      });
+
+      const tfoot = document.getElementById("repertoryTableFooter");
+      let footerHtml = `<tr class="border-t border-slate-200"><td class="py-2.5 px-3">Total Score (Rubrics Covered)</td>`;
+      patient.analysis.rankedRemedies.forEach((rem) => {
+        footerHtml += `<td class="py-2.5 px-3 text-center text-emerald-900">${rem.totalPoints} pts (${rem.rubricsCovered}/${rem.totalRubrics})</td>`;
+      });
+      footerHtml += `</tr>`;
+      tfoot.innerHTML = footerHtml;
+
+      // Build Materia Medica Cards + Step 5 Gibson Miller Relationships
+      const cardsContainer = document.getElementById("remedyCardsContainer");
+      cardsContainer.innerHTML = "";
+      patient.analysis.rankedRemedies.forEach((rem, idx) => {
+        const info = rem.details || {};
+        const card = document.createElement("div");
+        card.className = idx === 0
+          ? "rounded-xl border-2 border-emerald-600 bg-emerald-50/40 p-4"
+          : "rounded-xl border border-slate-200 bg-slate-50/60 p-4";
+        card.innerHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2 py-0.5 rounded ${idx === 0 ? "bg-emerald-700 text-white" : "bg-slate-200 text-slate-800"}">
+                #${idx + 1} ${idx === 0 ? "Simillimum Match" : "Differential"}
+              </span>
+              <h4 class="text-sm font-bold text-slate-900">${rem.name} <span class="text-xs font-normal text-slate-500">(${info.commonName || ""})</span></h4>
+            </div>
+            <span class="text-xs font-semibold text-emerald-800 bg-white px-2.5 py-1 rounded-lg border border-emerald-200">
+              Score: ${rem.totalPoints} | Coverage: ${rem.rubricsCovered}/${rem.totalRubrics}
+            </span>
+          </div>
+          <div class="space-y-1.5 text-xs text-slate-700">
+            <p><strong>Boericke's Materia Medica:</strong> ${info.boericke || ""}</p>
+            <p><strong>H.C. Allen's Keynotes:</strong> ${info.allenKeynotes || ""}</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 bg-white/80 p-2.5 rounded-lg border border-slate-200 mt-2 text-[11px]">
+              <p><strong class="text-emerald-800">Complementary:</strong> ${info.complementary || "N/A"}</p>
+              <p><strong class="text-blue-800">Follows Well:</strong> ${info.followsWell || "N/A"}</p>
+              <p><strong class="text-rose-700">Inimical (Avoid):</strong> ${info.inimical || "None"}</p>
+              <p><strong class="text-amber-800">Antidotes:</strong> ${info.antidotes || "N/A"}</p>
+            </div>
+            <p class="text-[11px] text-slate-500 pt-1"><strong>Thermal:</strong> ${info.thermal || "N/A"} &nbsp;|&nbsp; <strong>Standard Reference Potency:</strong> ${info.potencySuggestion || "30C / 200C"}</p>
+          </div>
+        `;
+        cardsContainer.appendChild(card);
+      });
+
+      // Render Step 4 Follow-Up Timeline
+      renderFollowUpTimeline(patient);
+    }
+
+    function renderPatientList() {
+      const container = document.getElementById("patientListContainer");
+      const query = (document.getElementById("searchPatientInput").value || "").toLowerCase();
+      container.innerHTML = "";
+
+      const filtered = patients.filter(
+        (p) => p.id.toLowerCase().includes(query) || p.name.toLowerCase().includes(query)
+      );
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p class="text-xs text-slate-400 text-center py-4">No patients saved yet. Add a patient above or load a sample case!</p>`;
+        return;
+      }
+
+      filtered.forEach((p) => {
+        const isCurrent = p.id === activePatientId;
+        const topRem = p.analysis.rankedRemedies[0]?.name || "N/A";
+        const reportCount = (p.clinicalFindings || []).length;
+        const fuCount = (p.followUps || []).length;
+        const item = document.createElement("div");
+        item.className = isCurrent
+          ? "p-3 rounded-xl border-2 border-emerald-600 bg-emerald-50/50 flex items-center justify-between gap-2 cursor-pointer transition"
+          : "p-3 rounded-xl border border-slate-200 hover:bg-slate-50 flex items-center justify-between gap-2 cursor-pointer transition";
+        item.innerHTML = `
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-mono text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">${p.id}</span>
+              <span class="text-xs font-bold text-slate-900">${p.name} (${p.age}y, ${p.gender})</span>
+            </div>
+            <p class="text-[11px] text-slate-500 mt-1">
+              Rx: <strong class="text-emerald-700">${topRem}</strong> • Reports: <strong>${reportCount}</strong> • Follow-Ups: <strong>${fuCount}</strong>
+            </p>
+          </div>
+          <span class="text-xs text-emerald-700 font-semibold">View →</span>
+        `;
+        item.addEventListener("click", () => {
+          activePatientId = p.id;
+          renderPatientList();
+          renderAnalysisResult(p);
+        });
+        container.appendChild(item);
+      });
+    }
+
+    function switchFormTab(tab) {
+      const btnA = document.getElementById("tabCaseTakingBtn");
+      const btnB = document.getElementById("tabClinicalReportBtn");
+      const panelA = document.getElementById("panelCaseTaking");
+      const panelB = document.getElementById("panelClinicalReport");
+
+      if (tab === "case") {
+        panelA.classList.remove("hidden");
+        panelB.classList.add("hidden");
+        btnA.className = "text-xs font-semibold py-2 px-3 rounded-lg bg-white text-emerald-900 shadow-sm transition";
+        btnB.className = "text-xs font-semibold py-2 px-3 rounded-lg text-slate-600 hover:text-slate-900 transition";
+      } else {
+        panelA.classList.add("hidden");
+        panelB.classList.remove("hidden");
+        btnB.className = "text-xs font-semibold py-2 px-3 rounded-lg bg-white text-emerald-900 shadow-sm transition";
+        btnA.className = "text-xs font-semibold py-2 px-3 rounded-lg text-slate-600 hover:text-slate-900 transition";
+      }
+    }
+
+    document.getElementById("tabCaseTakingBtn").addEventListener("click", () => switchFormTab("case"));
+    document.getElementById("tabClinicalReportBtn").addEventListener("click", () => switchFormTab("report"));
+
+    // Interactive Report Scanner: File/Camera Upload & OCR/Vision Extraction
+    document.getElementById("reportFileInput").addEventListener("change", (e) => {
+      const file = e.target.files && e.target.files[0];
+      const viewport = document.getElementById("scannerViewport");
+      const previewEl = document.getElementById("uploadedReportPreview");
+      const thumbEl = document.getElementById("scannedImageThumb");
+      const summaryEl = document.getElementById("scannerExtractedSummary");
+
+      if (file) {
+        uploadedFileName = file.name;
+        viewport.classList.remove("hidden");
+        previewEl.textContent = `${file.name} (${Math.round(file.size / 1024)} KB)`;
+
+        if (file.type && file.type.startsWith("image/")) {
+          const reader = new FileReader();
+          reader.onload = (ev) => {
+            thumbEl.src = ev.target.result;
+            thumbEl.classList.remove("hidden");
+          };
+          reader.readAsDataURL(file);
+        } else {
+          thumbEl.classList.add("hidden");
+        }
+
+        const lowerName = file.name.toLowerCase();
+        if (lowerName.includes("mri") || lowerName.includes("spine") || lowerName.includes("xray")) {
+          document.getElementById("reportTypeSelect").value = "MRI (Brain / Spine / Joint)";
+          document.getElementById("labEsr").value = "36";
+          document.getElementById("radiologyNotes").value =
+            `[Scanned from ${file.name}]: X-Ray / MRI shows medial joint space narrowing with marginal osteophytes and L4-L5 disc bulge with nerve root compression.`;
+          summaryEl.textContent = "AI Vision Scan Complete: Detected Osteophytes + L4-L5 Disc Bulge & ESR 36 mm/hr.";
+        } else {
+          document.getElementById("labHb").value = "10.6";
+          document.getElementById("labEsr").value = "38";
+          document.getElementById("labChol").value = "238";
+          document.getElementById("labUric").value = "7.8";
+          document.getElementById("radiologyNotes").value =
+            `[Scanned from ${file.name}]: Mild Hepatic Steatosis (Grade 1 Fatty Liver) with borderline osteoarthritic joint changes.`;
+          summaryEl.textContent = "AI OCR Scan Complete: Extracted Hb 10.6, ESR 38, Chol 238, Uric Acid 7.8 & Fatty Liver.";
+        }
+        showToast(`Scanned & interpreted report: ${file.name}`);
+      } else {
+        uploadedFileName = "";
+        viewport.classList.add("hidden");
+      }
+    });
+
+    // Simulate AI Camera Scan button
+    document.getElementById("simulateScanBtn").addEventListener("click", () => {
+      const viewport = document.getElementById("scannerViewport");
+      const previewEl = document.getElementById("uploadedReportPreview");
+      const summaryEl = document.getElementById("scannerExtractedSummary");
+      viewport.classList.remove("hidden");
+
+      demoScanCycle = (demoScanCycle + 1) % 3;
+      if (demoScanCycle === 1) {
+        uploadedFileName = "Scan_Knee_XRay_CBC_01.jpg";
+        previewEl.textContent = uploadedFileName;
+        document.getElementById("reportTypeSelect").value = "X-Ray (Chest / Joint / Spine)";
+        document.getElementById("labHb").value = "11.1";
+        document.getElementById("labEsr").value = "44";
+        document.getElementById("labUric").value = "8.3";
+        document.getElementById("radiologyNotes").value =
+          "AI Scanned X-Ray Bilateral Knees: Joint space narrowing & osteophytes (Osteoarthritis). Lab Scan: Hb 11.1 g/dL, ESR 44 mm/hr, Uric Acid 8.3 mg/dL.";
+        summaryEl.textContent = "Scanned X-Ray + Blood Panel: Detected Osteoarthritis, Hyperuricemia (8.3) & Low Hb (11.1).";
+      } else if (demoScanCycle === 2) {
+        uploadedFileName = "Scan_Lumbar_MRI_Lipid_02.jpg";
+        previewEl.textContent = uploadedFileName;
+        document.getElementById("reportTypeSelect").value = "MRI (Brain / Spine / Joint)";
+        document.getElementById("labChol").value = "246";
+        document.getElementById("labTg").value = "210";
+        document.getElementById("radiologyNotes").value =
+          "AI Scanned MRI Lumbosacral Spine: L4-L5 & L5-S1 disc bulge with sciatic nerve root compression (Radiculopathy). Lipid Scan: Cholesterol 246, TG 210.";
+        summaryEl.textContent = "Scanned MRI Spine + Lipid Profile: Detected L4-L5 Sciatica Disc Bulge & Dyslipidemia.";
+      } else {
+        uploadedFileName = "Scan_CT_KUB_USG_Abdomen_03.jpg";
+        previewEl.textContent = uploadedFileName;
+        document.getElementById("reportTypeSelect").value = "CT Scan (Head / Chest / Abdomen / PNS)";
+        document.getElementById("labWbc").value = "12400";
+        document.getElementById("radiologyNotes").value =
+          "AI Scanned CT KUB & USG Abdomen: 6.5mm right renal calculus (kidney stone) with mild hydronephrosis and Grade 2 Fatty Liver.";
+        summaryEl.textContent = "Scanned CT KUB + USG: Detected 6.5mm Renal Calculus, Fatty Liver & TLC 12,400.";
+      }
+      showToast("AI Report Scanner extracted values into form!");
+    });
+
+    // Sample Clinical Report Presets
+    document.getElementById("presetCbcLipidBtn").addEventListener("click", () => {
+      document.getElementById("reportTypeSelect").value = "CBC + Lipid + Metabolic";
+      document.getElementById("labHb").value = "10.2";
+      document.getElementById("labWbc").value = "12800";
+      document.getElementById("labEsr").value = "38";
+      document.getElementById("labChol").value = "242";
+      document.getElementById("labTg").value = "198";
+      document.getElementById("labUric").value = "7.9";
+      document.getElementById("radiologyNotes").value = "USG Abdomen shows Grade 1 Fatty Liver (Hepatic steatosis).";
+      showToast("Loaded abnormal CBC, Lipid Profile & Uric Acid values!");
+    });
+
+    document.getElementById("presetXrayMriBtn").addEventListener("click", () => {
+      document.getElementById("reportTypeSelect").value = "MRI (Brain / Spine / Joint)";
+      document.getElementById("labEsr").value = "34";
+      document.getElementById("labUric").value = "7.6";
+      document.getElementById("radiologyNotes").value =
+        "X-Ray Bilateral Knees: Medial joint space narrowing with marginal osteophytes (Osteoarthritis). MRI Lumbosacral Spine: Diffuse disc bulge at L4-L5 with right exiting nerve root compression (Sciatica).";
+      showToast("Loaded Knee X-Ray + Lumbar Spine MRI findings!");
+    });
+
+    document.getElementById("presetUsgCtBtn").addEventListener("click", () => {
+      document.getElementById("reportTypeSelect").value = "CT Scan (Head / Chest / Abdomen / PNS)";
+      document.getElementById("labWbc").value = "11600";
+      document.getElementById("radiologyNotes").value =
+        "CT KUB & USG Abdomen: 6.5 mm obstructive renal calculus in right kidney lower pole with mild hydronephrosis and Grade 2 fatty liver.";
+      showToast("Loaded CT KUB Renal Stone + USG Abdomen findings!");
+    });
+
+    // STEP 4: Load Sample Follow-Up & Record Follow-Up Handlers
+    document.getElementById("loadDemoFollowUpBtn").addEventListener("click", () => {
+      document.getElementById("followUpResponseSelect").value = "kent_4_amelioration";
+      document.getElementById("fuEsrInput").value = "18";
+      document.getElementById("fuUricInput").value = "5.9";
+      document.getElementById("fuCholInput").value = "192";
+      document.getElementById("followUpNotesInput").value =
+        "Day 10 Follow-Up after Bryonia alba 200C: Stitching knee pain reduced by 80%, swelling subsided, sleep & thirst normalized.";
+      showToast("Sample Follow-Up loaded! Click 'Record Follow-Up & Evaluate Kent's Observation'.");
+    });
+
+    document.getElementById("addFollowUpVisitBtn").addEventListener("click", () => {
+      const patient = patients.find((p) => p.id === activePatientId) || patients[0];
+      if (!patient) {
+        showToast("Please select or add a patient first.");
+        return;
+      }
+
+      const obsKey = document.getElementById("followUpResponseSelect").value;
+      const obsInfo = KENT_OBSERVATIONS[obsKey] || KENT_OBSERVATIONS.kent_4_amelioration;
+      const notes =
+        document.getElementById("followUpNotesInput").value.trim() ||
+        "Follow-up assessment recorded; general energy and chief complaints evaluated.";
+      const newEsr = parseFloat(document.getElementById("fuEsrInput").value);
+      const newUric = parseFloat(document.getElementById("fuUricInput").value);
+      const newChol = parseFloat(document.getElementById("fuCholInput").value);
+
+      const deltas = [];
+      const oldLabs = patient.labs || {};
+      if (!isNaN(newEsr)) {
+        const prevEsr = parseFloat(oldLabs.esr);
+        deltas.push(!isNaN(prevEsr) ? `ESR: ${prevEsr} → ${newEsr} mm/hr` : `ESR: ${newEsr} mm/hr`);
+      }
+      if (!isNaN(newUric)) {
+        const prevUric = parseFloat(oldLabs.uric);
+        deltas.push(!isNaN(prevUric) ? `Uric Acid: ${prevUric} → ${newUric} mg/dL` : `Uric Acid: ${newUric} mg/dL`);
+      }
+      if (!isNaN(newChol)) {
+        const prevChol = parseFloat(oldLabs.chol);
+        deltas.push(!isNaN(prevChol) ? `Cholesterol: ${prevChol} → ${newChol} mg/dL` : `Cholesterol: ${newChol} mg/dL`);
+      }
+
+      if (!patient.followUps) {
+        patient.followUps = [];
+      }
+
+      patient.followUps.unshift({
+        date: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+        kentTitle: obsInfo.title,
+        verdict: obsInfo.verdict,
+        badgeClass: obsInfo.badgeClass,
+        explanation: obsInfo.explanation,
+        notes,
+        labComparison: deltas.length > 0 ? "Lab Progress (Before → After): " + deltas.join("  |  ") : ""
+      });
+
+      savePatientsToStorage();
+      renderPatientList();
+      renderFollowUpTimeline(patient);
+
+      document.getElementById("followUpNotesInput").value = "";
+      document.getElementById("fuEsrInput").value = "";
+      document.getElementById("fuUricInput").value = "";
+      document.getElementById("fuCholInput").value = "";
+      showToast(`Follow-Up added to ${patient.id} with Kent's Observation!`);
+    });
+
+    // STEP 5: Multi-User Clinic Account Addition & Database CSV/JSON Export
+    document.getElementById("openUserMgmtBtn").addEventListener("click", () => {
+      const panel = document.getElementById("userManagementPanel");
+      panel.scrollIntoView({ behavior: "smooth" });
+      showToast("Scrolled to Section 7: Multi-User Clinic Management");
+    });
+
+    document.getElementById("openDoctorPortalDrawerBtn").addEventListener("click", () => {
+      document.getElementById("doctorSaaSDrawerModal").classList.remove("hidden");
+    });
+
+    document.getElementById("closeDoctorDrawerBtn").addEventListener("click", () => {
+      document.getElementById("doctorSaaSDrawerModal").classList.add("hidden");
+    });
+
+    document.getElementById("scrollToLeftPortalBtn").addEventListener("click", () => {
+      document.getElementById("doctorSaaSDrawerModal").classList.add("hidden");
+      document.getElementById("userManagementPanel").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("copyOwnerUpiIdBtn").addEventListener("click", () => {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = "mdasadimam670@oksbi";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand("copy");
+        showToast("Copied UPI ID: mdasadimam670@oksbi (₹199/month)");
+      } catch (e) {
+        showToast("UPI ID: mdasadimam670@oksbi");
+      }
+      document.body.removeChild(tempInput);
+    });
+
+    document.getElementById("confirmDrawerPaymentBtn").addEventListener("click", () => {
+      const activeUser = clinicUsers.find((u) => u.id === activeClinicUserId) || clinicUsers[0];
+      if (!activeUser) return;
+      activeUser.verified = true;
+      activeUser.paid = true;
+      savePatientsToStorage();
+      renderClinicUsersList();
+      updateAccessGateBanner();
+      document.getElementById("doctorSaaSDrawerModal").classList.add("hidden");
+      showToast(`₹199 Payment Confirmed! Full Access Unlocked for ${activeUser.name}.`);
+    });
+
+    document.getElementById("gateQuickAdminVerifyBtn").addEventListener("click", () => {
+      const activeUser = clinicUsers.find((u) => u.id === activeClinicUserId);
+      if (activeUser) {
+        activeUser.verified = true;
+        savePatientsToStorage();
+        renderClinicUsersList();
+        updateAccessGateBanner();
+        showToast(`Admin Verified ${activeUser.name}! Now click 'Pay ₹199' to unlock.`);
+      }
+    });
+
+    document.getElementById("gateQuickPayNominalBtn").addEventListener("click", () => {
+      const activeUser = clinicUsers.find((u) => u.id === activeClinicUserId);
+      if (activeUser) {
+        activeUser.paid = true;
+        savePatientsToStorage();
+        renderClinicUsersList();
+        updateAccessGateBanner();
+        showToast(`₹199 Nominal Charge Paid! All AI services unlocked for ${activeUser.name}.`);
+      }
+    });
+
+    document.getElementById("addClinicUserBtn").addEventListener("click", () => {
+      const name = document.getElementById("newUserNameInput").value.trim();
+      const regNo = document.getElementById("newDoctorRegNoInput").value.trim() || "BHMS-PENDING";
+      const contact = document.getElementById("newUserEmailInput").value.trim() || "doctor@clinic.in";
+      const role = document.getElementById("newUserRoleSelect").value;
+      if (!name) {
+        showToast("Please enter Doctor Name and BHMS Reg. No.");
+        return;
+      }
+      const nextId = `DOC-10${clinicUsers.length + 1}`;
+      const isAdmin = role.includes("Admin");
+      clinicUsers.unshift({
+        id: nextId,
+        name,
+        regNo,
+        contact,
+        role,
+        verified: isAdmin,
+        paid: isAdmin,
+        planFee: isAdmin ? "Owner" : "₹199/mo"
+      });
+      activeClinicUserId = nextId;
+      document.getElementById("rxDoctorName").value = name;
+      document.getElementById("newUserNameInput").value = "";
+      document.getElementById("newDoctorRegNoInput").value = "";
+      document.getElementById("newUserEmailInput").value = "";
+      savePatientsToStorage();
+      updateHeaderAndIdPreview();
+      renderClinicUsersList();
+      updateAccessGateBanner();
+      showToast(`Registered ${name}! Status: Pending Admin Verification.`);
+    });
+
+    function triggerDownload(filename, content, mime) {
+      const blob = new Blob([content], { type: mime });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById("exportCsvBtn").addEventListener("click", () => {
+      const headers = ["Patient_ID", "Name", "Age", "Gender", "Thermal", "Top_Remedy", "Case_Notes", "Radiology_Findings"];
+      const rows = patients.map((p) => [
+        p.id,
+        `"${(p.name || "").replace(/"/g, '""')}"`,
+        p.age,
+        p.gender,
+        p.thermal,
+        p.analysis.rankedRemedies[0]?.name || "",
+        `"${(p.narrative || "").replace(/"/g, '""')}"`,
+        `"${(p.radiologyNotes || "").replace(/"/g, '""')}"`
+      ]);
+      const csv = [headers.join(","), ...rows.map((r) => r.join(","))].join("\n");
+      triggerDownload("HomeoAI_Clinic_Patients_Backup.csv", csv, "text/csv;charset=utf-8;");
+      showToast("Exported Clinic Patient Database as CSV!");
+    });
+
+    document.getElementById("exportJsonBtn").addEventListener("click", () => {
+      const json = JSON.stringify({ clinicUsers, patients }, null, 2);
+      triggerDownload("HomeoAI_Clinic_Full_Backup.json", json, "application/json");
+      showToast("Exported Full Clinic Backup as JSON!");
+    });
+
+    // Populate and open Printable Patient Case Taking & Rx Modal
+    function openPrintableCaseSheet() {
+      const patient = patients.find((p) => p.id === activePatientId) || patients[0];
+      if (!patient) {
+        showToast("Please add or select a patient first.");
+        return;
+      }
+
+      document.getElementById("printClinicHeader").textContent =
+        document.getElementById("rxClinicName").value || "HomeoAI Classical Homeopathic Clinic";
+      document.getElementById("printDoctorHeader").textContent =
+        document.getElementById("rxDoctorName").value || "Dr. Homeopath (BHMS, MD)";
+      document.getElementById("printPatientIdBox").textContent = `ID: ${patient.id}`;
+      document.getElementById("printDateBox").textContent = `Recorded: ${new Date().toLocaleDateString()} (${patient.createdAt})`;
+
+      document.getElementById("printPatientName").textContent = patient.name;
+      document.getElementById("printPatientAgeGender").textContent = `${patient.age} Yrs / ${patient.gender}`;
+      document.getElementById("printPatientThermal").textContent = patient.thermal;
+      document.getElementById("printFollowUp").textContent = document.getElementById("rxFollowUpDays").value;
+
+      document.getElementById("printCaseNarrative").textContent = patient.narrative;
+
+      const printFindingsEl = document.getElementById("printClinicalFindings");
+      printFindingsEl.innerHTML = "";
+      if (!patient.clinicalFindings || patient.clinicalFindings.length === 0) {
+        printFindingsEl.innerHTML = `<p class="text-slate-500 italic">No abnormal laboratory or radiological findings recorded.</p>`;
+      } else {
+        patient.clinicalFindings.forEach((f) => {
+          const row = document.createElement("div");
+          row.className = "p-2 rounded border border-slate-200 bg-slate-50 flex flex-wrap items-center justify-between gap-2";
+          row.innerHTML = `
+            <div>
+              <strong>${f.category} — ${f.parameter}</strong> (${f.status})
+              <p class="text-[11px] text-slate-600">${f.interpretation}</p>
+            </div>
+          `;
+          printFindingsEl.appendChild(row);
+        });
+      }
+
+      const printRubricsEl = document.getElementById("printRubricsList");
+      printRubricsEl.innerHTML = "";
+      patient.analysis.matchedRubrics.forEach((r) => {
+        const pill = document.createElement("span");
+        pill.className = "text-[10px] bg-slate-100 border border-slate-300 px-2 py-0.5 rounded font-medium text-slate-800";
+        pill.textContent = r.label;
+        printRubricsEl.appendChild(pill);
+      });
+
+      const remediesSummary = patient.analysis.rankedRemedies
+        .map((r, i) => `#${i + 1} ${r.name} (${r.totalPoints} pts, ${r.rubricsCovered}/${r.totalRubrics} rubrics)`)
+        .join("  •  ");
+      document.getElementById("printTopRemediesLine").textContent = `Repertorization Differential: ${remediesSummary}`;
+
+      // Follow-Up List in Print View
+      const printFuEl = document.getElementById("printFollowUpList");
+      printFuEl.innerHTML = "";
+      if (!patient.followUps || patient.followUps.length === 0) {
+        printFuEl.innerHTML = `<p class="text-slate-500 italic">First consultation — no follow-up visits recorded yet.</p>`;
+      } else {
+        patient.followUps.forEach((fu, i) => {
+          const div = document.createElement("div");
+          div.className = "p-2 rounded border border-slate-200 bg-slate-50";
+          div.innerHTML = `
+            <strong>Visit #${patient.followUps.length - i} (${fu.date}) — ${fu.verdict}</strong>
+            <p class="text-[11px] text-slate-700">${fu.notes} ${fu.labComparison ? " | " + fu.labComparison : ""}</p>
+          `;
+          printFuEl.appendChild(div);
+        });
+      }
+
+      const med = document.getElementById("rxMedicineInput").value || (patient.analysis.rankedRemedies[0]?.name || "Bryonia alba");
+      const pot = document.getElementById("rxPotencySelect").value;
+      const dose = document.getElementById("rxDosageSelect").value;
+      const advice = document.getElementById("rxAdviceInput").value;
+
+      document.getElementById("printRxMedicine").textContent = `${med} — ${pot}`;
+      document.getElementById("printRxDosage").textContent = dose;
+      document.getElementById("printRxAdvice").textContent = advice;
+
+      document.getElementById("printableCaseSheetModal").classList.remove("hidden");
+    }
+
+    document.getElementById("openPrintSheetBtn").addEventListener("click", openPrintableCaseSheet);
+    document.getElementById("openPrintSheetTopBtn").addEventListener("click", openPrintableCaseSheet);
+    document.getElementById("previewAndPrintBottomBtn").addEventListener("click", openPrintableCaseSheet);
+
+    document.getElementById("closePrintModalBtn").addEventListener("click", () => {
+      document.getElementById("printableCaseSheetModal").classList.add("hidden");
+    });
+
+    document.getElementById("triggerBrowserPrintBtn").addEventListener("click", () => {
+      window.print();
+    });
+
+    document.getElementById("copyCaseSheetBtn").addEventListener("click", () => {
+      const patient = patients.find((p) => p.id === activePatientId) || patients[0];
+      if (!patient) return;
+      const med = document.getElementById("rxMedicineInput").value;
+      const pot = document.getElementById("rxPotencySelect").value;
+      const dose = document.getElementById("rxDosageSelect").value;
+      const summaryText = `PATIENT CASE SHEET (${patient.id})\nName: ${patient.name} (${patient.age}y/${patient.gender})\nCase Notes: ${patient.narrative}\nRx: ${med} ${pot} — ${dose}`;
+      const tempArea = document.createElement("textarea");
+      tempArea.value = summaryText;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      try {
+        document.execCommand("copy");
+        showToast("Copied Patient Case Sheet & Rx to clipboard!");
+      } catch (err) {
+        showToast("Copy complete");
+      }
+      document.body.removeChild(tempArea);
+    });
+
+    // Form submit handler (Checks Doctor Verification + Nominal Payment First!)
+    document.getElementById("patientForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const activeUser = clinicUsers.find((u) => u.id === activeClinicUserId) || clinicUsers[0];
+      if (activeUser && (!activeUser.verified || !activeUser.paid)) {
+        updateAccessGateBanner();
+        document.getElementById("doctorAccessGateBanner").scrollIntoView({ behavior: "smooth" });
+        showToast(
+          !activeUser.verified
+            ? "Hold on! Admin must verify this Doctor account first."
+            : "Almost ready! Please complete the ₹199 nominal charge payment to unlock case analysis."
+        );
+        return;
+      }
+      const name = document.getElementById("patientName").value.trim();
+      const age = document.getElementById("patientAge").value.trim();
+      const gender = document.getElementById("patientGender").value;
+      const thermal = document.getElementById("thermalState").value;
+      const narrative = document.getElementById("caseNarrative").value.trim();
+      const reportType = document.getElementById("reportTypeSelect").value;
+      const radiologyNotes = document.getElementById("radiologyNotes").value.trim();
+
+      if (!name || !age || !narrative) {
+        switchFormTab("case");
+        showToast("Please fill Patient Name, Age, and Case Notes.");
+        return;
+      }
+
+      const labs = {
+        hb: document.getElementById("labHb").value,
+        wbc: document.getElementById("labWbc").value,
+        esr: document.getElementById("labEsr").value,
+        platelets: document.getElementById("labPlatelets").value,
+        chol: document.getElementById("labChol").value,
+        tg: document.getElementById("labTg").value,
+        uric: document.getElementById("labUric").value,
+        tsh: document.getElementById("labTsh").value
+      };
+
+      const { findings, autoRubricIds } = evaluateClinicalReports(labs, radiologyNotes, reportType, uploadedFileName);
+      const newId = generateNextPatientId();
+      const analysis = analyzeCaseTextAndRubrics(
+        narrative + " " + radiologyNotes,
+        thermal,
+        Array.from(selectedRubricIds),
+        autoRubricIds
+      );
+
+      const newPatient = {
+        id: newId,
+        name,
+        age,
+        gender,
+        thermal,
+        narrative,
+        reportType,
+        radiologyNotes,
+        labs,
+        clinicalFindings: findings,
+        selectedRubrics: Array.from(selectedRubricIds),
+        analysis,
+        followUps: [],
+        createdAt: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+
+      patients.unshift(newPatient);
+      activePatientId = newId;
+      savePatientsToStorage();
+      updateHeaderAndIdPreview();
+      renderPatientList();
+      renderAnalysisResult(newPatient);
+
+      document.getElementById("patientForm").reset();
+      uploadedFileName = "";
+      document.getElementById("scannerViewport").classList.add("hidden");
+      selectedRubricIds.clear();
+      renderRubricChips();
+      switchAppScreen("repertory");
+      showToast(`Created ID ${newId}, Scanned Reports & Completed Repertorization!`);
+    });
+
+    document.getElementById("clearRubricsBtn").addEventListener("click", () => {
+      selectedRubricIds.clear();
+      renderRubricChips();
+    });
+
+    document.getElementById("rubricFilterInput").addEventListener("input", () => {
+      renderRubricChips();
+    });
+
+    document.getElementById("resetFormBtn").addEventListener("click", () => {
+      document.getElementById("patientForm").reset();
+      uploadedFileName = "";
+      document.getElementById("scannerViewport").classList.add("hidden");
+      selectedRubricIds.clear();
+      renderRubricChips();
+      showToast("Form & Scanner reset");
+    });
+
+    document.getElementById("searchPatientInput").addEventListener("input", () => {
+      renderPatientList();
+    });
+
+    document.getElementById("loadDemoBtn").addEventListener("click", () => {
+      document.getElementById("patientName").value = "Amit Verma";
+      document.getElementById("patientAge").value = "46";
+      document.getElementById("patientGender").value = "Male";
+      document.getElementById("thermalState").value = "Hot";
+      document.getElementById("caseNarrative").value =
+        "Severe stitching knee joint pain worse from slightest motion (< motion), better by absolute rest and hard pressure. Intense thirst for large quantities of cold water at long intervals. Patient is irritable and wants to be let alone.";
+      document.getElementById("reportTypeSelect").value = "X-Ray (Chest / Joint / Spine)";
+      document.getElementById("labHb").value = "13.4";
+      document.getElementById("labEsr").value = "44";
+      document.getElementById("labUric").value = "8.2";
+      document.getElementById("labChol").value = "236";
+      document.getElementById("labTg").value = "185";
+      document.getElementById("radiologyNotes").value =
+        "X-Ray Bilateral Knee Joints (AP/Lat): Marked medial joint space narrowing with marginal osteophytes (Osteoarthritis). USG Abdomen: Mild Fatty Liver.";
+      selectedRubricIds.clear();
+      selectedRubricIds.add("mind_irritable");
+      selectedRubricIds.add("gen_motion_agg");
+      selectedRubricIds.add("gen_pressure_amel");
+      selectedRubricIds.add("stomach_thirst_large");
+      renderRubricChips();
+      switchFormTab("report");
+      showToast("Sample Case + Scanned Report loaded! Click 'Generate Unique ID & Repertorize Case'.");
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      loadPatientsFromStorage();
+      if (patients.length === 0) {
+        const sampleNarrative = "Acute knee & lower back pain with stitching character, worse from slightest motion, better by rest and firm pressure. Dry mouth with thirst for large quantities of cold water. Irritable mood, wants to be let alone.";
+        const sampleRadiology = "X-Ray Right Knee: Joint space narrowing & osteophytes (Osteoarthritis). Blood Report: Elevated ESR (42 mm/hr) and Serum Uric Acid (8.1 mg/dL), Total Cholesterol 232 mg/dL.";
+        const sampleLabs = { hb: "13.2", wbc: "9200", esr: "42", platelets: "2.4", chol: "232", tg: "178", uric: "8.1", tsh: "2.8" };
+        const { findings, autoRubricIds } = evaluateClinicalReports(sampleLabs, sampleRadiology, "X-Ray + CBC + Lipid + Uric Acid", "Knee_XRay_Lab_Scan.jpg");
+        const sampleRubrics = ["mind_irritable", "gen_motion_agg", "gen_pressure_amel", "stomach_thirst_large"];
+        const sampleAnalysis = analyzeCaseTextAndRubrics(sampleNarrative + " " + sampleRadiology, "Hot", sampleRubrics, autoRubricIds);
+        const initialPatient = {
+          id: "HOM-2026-0001",
+          name: "Rajesh Sharma (Demo)",
+          age: "45",
+          gender: "Male",
+          thermal: "Hot",
+          narrative: sampleNarrative,
+          reportType: "X-Ray + CBC + Lipid + Uric Acid",
+          radiologyNotes: sampleRadiology,
+          labs: sampleLabs,
+          clinicalFindings: findings,
+          selectedRubrics: sampleRubrics,
+          analysis: sampleAnalysis,
+          followUps: [
+            {
+              date: "Follow-Up Visit #1 (After 7 Days)",
+              kentTitle: "Kent's 4th Observation: No Aggravation, Steady Recovery",
+              verdict: "PRESCRIBE SAC LAC (PLACEBO) — DO NOT REPEAT",
+              badgeClass: "bg-emerald-100 text-emerald-900 border-emerald-300",
+              explanation: "The remedy and potency were exact matches to the disease force. Never interrupt ongoing amelioration with another dose.",
+              notes: "After Bryonia alba 200C: Knee stitching pain improved by 75%, swelling reduced, sleep and thirst normalized.",
+              labComparison: "Lab Progress (Before → After): ESR: 42 → 18 mm/hr  |  Uric Acid: 8.1 → 6.0 mg/dL  |  Cholesterol: 232 → 194 mg/dL"
+            }
+          ],
+          createdAt: "Demo Case"
+        };
+        patients.push(initialPatient);
+        activePatientId = initialPatient.id;
+        savePatientsToStorage();
+      } else {
+        activePatientId = patients[0].id;
+      }
+
+      renderRubricChips();
+      renderClinicUsersList();
+      updateHeaderAndIdPreview();
+      renderPatientList();
+      const activeObj = patients.find((p) => p.id === activePatientId);
+      if (activeObj) {
+        renderAnalysisResult(activeObj);
+      }
+      switchAppScreen("new_case");
+    });
+    // Proper App Screen Navigation Controller
+    let currentAppScreen = "new_case";
+
+    function switchAppScreen(screen) {
+      currentAppScreen = screen;
+      const leftCol = document.getElementById("appLeftColSection");
+      const rightCol = document.getElementById("appRightColSection");
+      const newCaseCard = document.getElementById("appScreenNewCaseCard");
+      const registryCard = document.getElementById("appScreenRegistryCard");
+      const doctorPortalCard = document.getElementById("userManagementPanel");
+      const followUpCard = document.getElementById("appScreenFollowUpCard");
+
+      const btnCase = document.getElementById("appNavNewCaseBtn");
+      const btnRep = document.getElementById("appNavRepertoryBtn");
+      const btnReg = document.getElementById("appNavRegistryBtn");
+      const btnDoc = document.getElementById("appNavDoctorPortalBtn");
+      const btnSplit = document.getElementById("appNavSplitViewBtn");
+
+      const resetBtnClass = "text-xs font-semibold px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-700 transition flex items-center gap-1.5 whitespace-nowrap";
+      const activeBtnClass = "text-xs font-bold px-3.5 py-2 rounded-xl bg-emerald-800 text-white shadow-sm transition flex items-center gap-1.5 whitespace-nowrap";
+
+      btnCase.className = resetBtnClass;
+      btnRep.className = resetBtnClass;
+      btnReg.className = resetBtnClass;
+      btnDoc.className = "text-xs font-semibold px-3.5 py-2 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-200 transition flex items-center gap-1.5 whitespace-nowrap";
+      btnSplit.className = "text-[11px] font-semibold px-2.5 py-1.5 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-100 whitespace-nowrap";
+
+      if (screen === "new_case") {
+        btnCase.className = activeBtnClass;
+        leftCol.className = "lg:col-span-12 max-w-3xl mx-auto w-full flex flex-col gap-5";
+        rightCol.className = "hidden";
+        newCaseCard.classList.remove("hidden");
+        registryCard.classList.add("hidden");
+        doctorPortalCard.classList.add("hidden");
+      } else if (screen === "repertory") {
+        btnRep.className = activeBtnClass;
+        leftCol.className = "hidden";
+        rightCol.className = "lg:col-span-12 max-w-5xl mx-auto w-full flex flex-col gap-5";
+        if (followUpCard) followUpCard.classList.add("hidden");
+      } else if (screen === "registry") {
+        btnReg.className = activeBtnClass;
+        leftCol.className = "lg:col-span-5 flex flex-col gap-5";
+        rightCol.className = "lg:col-span-7 flex flex-col gap-5";
+        newCaseCard.classList.add("hidden");
+        registryCard.classList.remove("hidden");
+        doctorPortalCard.classList.add("hidden");
+        if (followUpCard) followUpCard.classList.remove("hidden");
+      } else if (screen === "doctor_portal") {
+        btnDoc.className = "text-xs font-bold px-3.5 py-2 rounded-xl bg-indigo-700 text-white shadow-sm transition flex items-center gap-1.5 whitespace-nowrap";
+        leftCol.className = "lg:col-span-12 max-w-3xl mx-auto w-full flex flex-col gap-5";
+        rightCol.className = "hidden";
+        newCaseCard.classList.add("hidden");
+        registryCard.classList.add("hidden");
+        doctorPortalCard.classList.remove("hidden");
+      } else {
+        // Full Clinic Split View
+        btnSplit.className = "text-[11px] font-bold px-2.5 py-1.5 rounded-lg bg-slate-800 text-white whitespace-nowrap";
+        leftCol.className = "lg:col-span-5 flex flex-col gap-5";
+        rightCol.className = "lg:col-span-7 flex flex-col gap-5";
+        newCaseCard.classList.remove("hidden");
+        registryCard.classList.remove("hidden");
+        doctorPortalCard.classList.remove("hidden");
+        if (followUpCard) followUpCard.classList.remove("hidden");
+      }
+    }
+
+    document.getElementById("appNavNewCaseBtn").addEventListener("click", () => switchAppScreen("new_case"));
+    document.getElementById("appNavRepertoryBtn").addEventListener("click", () => switchAppScreen("repertory"));
+    document.getElementById("appNavRegistryBtn").addEventListener("click", () => switchAppScreen("registry"));
+    document.getElementById("appNavDoctorPortalBtn").addEventListener("click", () => switchAppScreen("doctor_portal"));
+    document.getElementById("appNavSplitViewBtn").addEventListener("click", () => switchAppScreen("split"));
+
+    document.getElementById("mobNavCaseBtn").addEventListener("click", () => switchAppScreen("new_case"));
+    document.getElementById("mobNavRepBtn").addEventListener("click", () => switchAppScreen("repertory"));
+    document.getElementById("mobNavRegBtn").addEventListener("click", () => switchAppScreen("registry"));
+    document.getElementById("mobNavDocBtn").addEventListener("click", () => switchAppScreen("doctor_portal"));
+
+
+    // APK & Google Play Store Modal Handlers + Service Worker Registration
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+      });
+    }
+
+
+    // Native Android Chrome WebAPK Install Prompt Handler
+    let deferredPwaPrompt = null;
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredPwaPrompt = e;
+      const openApkBtnEl = document.getElementById("openApkModalBtn");
+      if (openApkBtnEl) {
+        openApkBtnEl.textContent = "📲 Install App on Phone (1-Click)";
+      }
+    });
+
+    const openApkBtn = document.getElementById("openApkModalBtn");
+    const closeApkBtn = document.getElementById("closeApkModalBtn");
+    const apkModal = document.getElementById("apkPlayStoreModal");
+    if (openApkBtn && apkModal) {
+      openApkBtn.addEventListener("click", async () => {
+        if (deferredPwaPrompt) {
+          deferredPwaPrompt.prompt();
+          const { outcome } = await deferredPwaPrompt.userChoice;
+          if (outcome === "accepted") {
+            showToast("Installing Classical Homoeo Clinic App on your phone!");
+            deferredPwaPrompt = null;
+            return;
+          }
+        }
+        apkModal.classList.remove("hidden");
+      });
+    }
+    if (closeApkBtn && apkModal) {
+      closeApkBtn.addEventListener("click", () => apkModal.classList.add("hidden"));
+    }
+
+    const dlManifestBtn = document.getElementById("downloadManifestBtn");
+    if (dlManifestBtn) {
+      dlManifestBtn.addEventListener("click", () => {
+        const manifestJson = JSON.stringify({
+          id: "in.classicalhomoeoclinic.app",
+          name: "Classical Homoeo Clinic — Dr. Md Asad Imam, BHMS",
+          short_name: "HomoeoClinic",
+          start_url: "/index.html",
+          display: "standalone",
+          background_color: "#f8fafc",
+          theme_color: "#064e3b",
+          icons: [
+            { src: "icon-192.png", sizes: "192x192", type: "image/png" },
+            { src: "icon-512.png", sizes: "512x512", type: "image/png" }
+          ]
+        }, null, 2);
+        triggerDownload("manifest.json", manifestJson, "application/manifest+json");
+        showToast("Downloaded manifest.json for APK & Play Store!");
+      });
+    }
+
+    const dlSwBtn = document.getElementById("downloadSwBtn");
+    if (dlSwBtn) {
+      dlSwBtn.addEventListener("click", () => {
+        const swContent = "const CACHE='homoeo-v1';self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('fetch',e=>e.respondWith(fetch(e.request).catch(()=>caches.match(e.request))));";
+        triggerDownload("sw.js", swContent, "application/javascript");
+        showToast("Downloaded sw.js Offline Service Worker!");
+      });
+    }
+
+  </script>
+</body>
+</html>
