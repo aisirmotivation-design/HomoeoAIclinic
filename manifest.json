@@ -1,0 +1,55 @@
+{
+  "id": "in.classicalhomoeoclinic.app",
+  "name": "Classical Homoeo Clinic \u2014 Dr. Md Asad Imam, BHMS",
+  "short_name": "HomoeoClinic",
+  "description": "Classical Homoeopathy Repertorization, Lab/X-Ray/CT/MRI Report Scanner, Printable Prescription & Doctor SaaS App by Dr. Md Asad Imam, BHMS.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#064e3b",
+  "prefer_related_applications": false,
+  "categories": [
+    "medical",
+    "health",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Classical Homoeo Clinic Case Taking & AI Repertory"
+    }
+  ]
+}
